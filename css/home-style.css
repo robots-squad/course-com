@@ -1,5 +1,6 @@
 /*************************** main hero section ******************************/
 main{
+
   display: block;
   height: 1500px;
 }
@@ -16,28 +17,158 @@ main{
   width: 100%;
 }
 
+/********************************* slide section *********************************/
 
-/* silde section  */
-
-img{
-    width: 300px;
-    height: 300px;
-    
-}
-.next{
-    font-size: large;
-    text-transform: uppercase;
-    position:absolute;
-    top: 15%;
-    left:12% ;
-
-}
-.Previous{
-    font-size: large;
-    text-transform: uppercase;
-    position:absolute;
-    top: 15%;
-    left:4% ;
-
+#slider{
+  display: block;
+  position:relative;
+  top: 900px;
 }
 
+.card-container {
+  height: 220px;
+  perspective: 600;
+  position: relative;
+  left: 50px;
+  width: 150px;
+}
+
+/************ html card **********/
+
+.side li{
+  padding-bottom: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: orangered;
+}
+
+#slider button:hover{
+  cursor: pointer;
+}
+
+.HTML {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 180px;
+}
+
+.HTML:hover {
+  transform: rotateY(180deg);
+}
+
+.HTML .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.HTML .back {
+  transform: rotateY(180deg);
+}
+
+/************ css card **********/
+
+.CSS {
+  height: 100%;
+  position: absolute;
+  left: 230px;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 180px;
+}
+
+.CSS:hover {
+  transform: rotateY(180deg);
+}
+.CSS .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.CSS .back {
+  transform: rotateY(180deg);
+}
+
+/************ python card **********/
+
+.Python {
+  height: 100%;
+  position: absolute;
+  left: 29em;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 180px;
+}
+
+.Python:hover {
+  transform: rotateY(180deg);
+}
+.Python .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.Python .back {
+  transform: rotateY(180deg);
+}
+
+/************** Oracle card ******************/
+
+.Oracle {
+  height: 100%;
+  position: absolute;
+  left: 44em;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 180px;
+}
+
+.Oracle:hover {
+  transform: rotateY(180deg);
+}
+.Oracle .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.Oracle .back {
+  transform: rotateY(180deg);
+}
+
+/************** JavaScript card ******************/
+.JS {
+  height: 100%;
+  position: absolute;
+  left: 59em;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 180px;
+}
+
+.JS:hover {
+  transform: rotateY(180deg);
+}
+.JS .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.JS .back {
+  transform: rotateY(180deg);
+}
+
+/**********learn more button **************/
+
+#more{
+  position:absolute;
+  right: 98px;
+  top: 84px;
+  width: 113px;
+  height: 45px;
+}

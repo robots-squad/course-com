@@ -25,6 +25,7 @@ footer p{
   border: none;
   background-repeat: no-repeat;
   margin-right: 8px;
+  cursor: pointer;
 }
 
 #facebook{
