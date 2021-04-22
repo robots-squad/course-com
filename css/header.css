@@ -14,13 +14,16 @@ body{
 /********************* header ****************************/
 
 header{
-  font-family: 'Righteous', cursive;
-  position: relative;
-  background: white;
-  color: #4730d5;
-  padding: 10px;
+  position: fixed;
+  display: flex;
+  z-index: 10000;
+  height: 97px;
+  width: 100%;
   min-height: 97px;
-  border-bottom: 4px solid orangered;
+  background: rgba(255, 255, 255, 0.8);
+  color: #4730d5;
+  padding: 10px 0px;
+  font-family: 'Righteous', cursive;
 }
 
 #logo{
@@ -78,4 +81,25 @@ header li{
 #head-buttons button:active {
   box-shadow: 0 2px 0 #8476da;
   transform: translateY(3px);
+}
+
+
+
+/*************************** main ******************************/
+
+#hero{
+  position: relative;
+  top:0;
+}
+
+#hero img{
+  position: absolute;
+  top: 100px;
+  padding:0;
+  margin: 0;
+  width: 100%;
+}
+
+#info{
+  position: relative;
 }
