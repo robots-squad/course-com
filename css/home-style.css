@@ -17,3 +17,27 @@ main{
 }
 
 
+/* silde section  */
+
+img{
+    width: 300px;
+    height: 300px;
+    
+}
+.next{
+    font-size: large;
+    text-transform: uppercase;
+    position:absolute;
+    top: 15%;
+    left:12% ;
+
+}
+.Previous{
+    font-size: large;
+    text-transform: uppercase;
+    position:absolute;
+    top: 15%;
+    left:4% ;
+
+}
+
