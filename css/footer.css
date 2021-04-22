@@ -2,7 +2,7 @@ footer{
   margin-top: 100px;
   display: block;
   height: 200px;
-  background-color: #62bdf3;
+  background-color: white;
 }
 
 footer #container{
@@ -12,7 +12,7 @@ footer #container{
 
 footer p{
   position: absolute;
-  left: 42%;
+  left: 45%;
   top: 6em;
   color: rgb(61, 60, 60);
 }
@@ -92,4 +92,14 @@ footer nav a{
 
 footer nav a:hover{
   text-decoration: underline;
+}
+
+footer #footer-logo{
+  position: absolute;
+  left: 50%;
+  top: -28px
+}
+
+footer hr{
+  width: 70%;
 }
