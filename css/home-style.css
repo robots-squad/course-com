@@ -2,7 +2,7 @@
 main{
 
   display: block;
-  height: 1500px;
+  height: 2000px;
 }
 
 #hero{
@@ -22,7 +22,7 @@ main{
 #slider{
   display: block;
   position:relative;
-  top: 900px;
+  top: 85%;
 }
 
 .card-container {

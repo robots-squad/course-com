@@ -19,7 +19,7 @@ header{
   height: 97px;
   width: 100%;
   min-height: 97px;
-  background: white;
+  background: rgba(255, 255, 255, 0.7);
   color: #4730d5;
   padding: 10px 0px;
   font-family: 'Righteous', cursive;
