@@ -10,19 +10,38 @@ main{
 }
 
 #hero img{
-  position:absolute;
-  top: 100px;
+  display: block;
   padding:0;
-  margin: 0;
+  margin-top: 100px;
   width: 100%;
 }
+
+#hero article{
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  text-align: center;
+}
+
+#hero #main{
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  line-height: 100px;
+}
+
+#hero #secondary{
+  font-size: 20px;
+  color: #4730d5;
+}
+
 
 /********************************* slide section *********************************/
 
 #slider{
   display: block;
   position:relative;
-  top: 85%;
+  top: 50%;
 }
 
 .card-container {
@@ -39,7 +58,6 @@ main{
   padding-bottom: 25px;
   font-size: 18px;
   font-weight: bold;
-  color: orangered;
 }
 
 #slider button:hover{
@@ -50,7 +68,7 @@ main{
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
+  transition: all 0.7s ease-in-out;
   width: 180px;
 }
 
@@ -75,7 +93,7 @@ main{
   position: absolute;
   left: 230px;
   transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
+  transition: all 0.7s ease-in-out;
   width: 180px;
 }
 
@@ -99,7 +117,7 @@ main{
   position: absolute;
   left: 29em;
   transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
+  transition: all 0.7s ease-in-out;
   width: 180px;
 }
 
@@ -123,7 +141,7 @@ main{
   position: absolute;
   left: 44em;
   transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
+  transition: all 0.7s ease-in-out;
   width: 180px;
 }
 
@@ -146,7 +164,7 @@ main{
   position: absolute;
   left: 59em;
   transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
+  transition: all 0.7s ease-in-out;
   width: 180px;
 }
 
