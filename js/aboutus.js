@@ -2,6 +2,7 @@
 
 const feedbackForm = document.getElementById('feedbackForm');
 const feedbacks = document.getElementById('feedbacks');
+const textarea = document.getElementById('textarea');
 
 
 function Feed(feedback) {
@@ -51,16 +52,21 @@ function gettingFeedFormLs() {
 
 function renderFeedBack() {
     feedbacks.textContent = '';
-
-    for (let i = 0; i < Feed.allFeeds.length; i++) {
+    textarea.value = '';
+    let count = 0;
+    for (let i = Feed.allFeeds.length - 1; i >= 0; i--) {
         const feedli = document.createElement('li');
-
+        count++;
         feedli.textContent = `${Feed.allFeeds[i].feedback} `;
         feedbacks.appendChild(feedli);
+
+        if (count == 5) {
+            break;
+        }
+
+
     }
 }
-
-
 
 
 feedbackForm.addEventListener('submit', handleSubmit);
