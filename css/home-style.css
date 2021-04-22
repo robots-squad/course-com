@@ -1,9 +1,11 @@
 /*************************** main hero section ******************************/
+main{
+  display: block;
+  height: 1500px;
+}
 
 #hero{
   position:relative;
-  display: block;
-  top:0;
 }
 
 #hero img{
