@@ -15,7 +15,8 @@ body{
 
 header{
   position: fixed;
-  display: flex;
+  top: 0;
+  display: block;
   z-index: 10000;
   height: 97px;
   width: 100%;
@@ -81,25 +82,4 @@ header li{
 #head-buttons button:active {
   box-shadow: 0 2px 0 #8476da;
   transform: translateY(3px);
-}
-
-
-
-/*************************** main ******************************/
-
-#hero{
-  position: relative;
-  top:0;
-}
-
-#hero img{
-  position: absolute;
-  top: 100px;
-  padding:0;
-  margin: 0;
-  width: 100%;
-}
-
-#info{
-  position: relative;
 }

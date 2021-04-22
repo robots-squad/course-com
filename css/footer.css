@@ -1,0 +1,60 @@
+footer{
+  position: fixed;
+  bottom:0;
+  display: block;
+  height: 250px;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+#social{
+  position: absolute;
+  right: 10px;
+}
+
+#social button{
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+#facebook{
+  background-image: url(/img/facebook.png);
+  width: 45px;
+  height: 42px;
+}
+
+#facebook:hover{
+  background-position: -56.5px 0;
+}
+
+#linkedin{
+  background-image: url(/img/linkedin.png);
+  width: 45px;
+  height: 44px;
+}
+
+#linkedin:hover{
+  background-position: -54px 0;
+}
+
+#insta{
+  background-image: url(/img/insta.png);
+  width: 44px;
+  height: 44px;
+}
+
+#insta:hover{
+  background-position: -52.5px 0;
+}
+
+#twitter{
+  background-image: url(/img/twitter.png);
+  width: 45px;
+  height: 44px;
+}
+
+#twitter:hover{
+  background-position: -53.3px 0;
+}

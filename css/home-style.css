@@ -1,0 +1,17 @@
+/*************************** main hero section ******************************/
+
+#hero{
+  position:relative;
+  display: block;
+  top:0;
+}
+
+#hero img{
+  position:absolute;
+  top: 100px;
+  padding:0;
+  margin: 0;
+  width: 100%;
+}
+
+
