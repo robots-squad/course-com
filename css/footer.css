@@ -1,0 +1,91 @@
+footer{
+  position: relative;
+  bottom:0;
+  display: block;
+  height: 200px;
+  width: 100%;
+  background-color: #62bdf3;
+}
+
+footer p{
+  position: absolute;
+  left: 42%;
+  top: 6em;
+  color: rgb(61, 60, 60);
+}
+
+#social{
+  position: absolute;
+  right: 10px;
+  top: 85px;
+}
+
+#social button{
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+#facebook{
+  background-image: url(/img/facebook.png);
+  width: 45px;
+  height: 42px;
+}
+
+#facebook:hover{
+  background-position: -56.5px 0;
+}
+
+#linkedin{
+  background-image: url(/img/linkedin.png);
+  width: 45px;
+  height: 44px;
+}
+
+#linkedin:hover{
+  background-position: -54px 0;
+}
+
+#insta{
+  background-image: url(/img/insta.png);
+  width: 44px;
+  height: 44px;
+}
+
+#insta:hover{
+  background-position: -52.5px 0;
+}
+
+#twitter{
+  background-image: url(/img/twitter.png);
+  width: 45px;
+  height: 44px;
+}
+
+#twitter:hover{
+  background-position: -53.3px 0;
+}
+
+footer nav{
+  text-align: left;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+
+footer nav li{
+  display: inline;
+  padding-left: 50px;
+}
+
+footer nav a{
+  font-size: 20px;
+  text-decoration: none;
+  color:black;
+
+}
+
+footer nav a:hover{
+  text-decoration: underline;
+}

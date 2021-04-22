@@ -1,3 +1,21 @@
+/*************************** main hero section ******************************/
+main{
+  display: block;
+  height: 1500px;
+}
+
+#hero{
+  position:relative;
+}
+
+#hero img{
+  position:absolute;
+  top: 100px;
+  padding:0;
+  margin: 0;
+  width: 100%;
+}
+
 
 /* silde section  */
 
@@ -22,3 +40,4 @@ img{
     left:4% ;
 
 }
+
