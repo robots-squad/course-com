@@ -35,13 +35,26 @@ main{
   color: #4730d5;
 }
 
+/********************************* info section *********************************/
+
+#info div{
+  height: 300px;
+  background-color: #62bef36e;
+  margin-top: 20px;
+}
+
+
+
+
+
+
 
 /********************************* slide section *********************************/
 
 #slider{
   display: block;
   position:relative;
-  top: 50%;
+  margin-top: 30px;
 }
 
 .card-container {
@@ -134,7 +147,7 @@ main{
   transform: rotateY(180deg);
 }
 
-/************** Oracle card ******************/
+/************** Oracle card ************/
 
 .Oracle {
   height: 100%;
@@ -158,7 +171,7 @@ main{
   transform: rotateY(180deg);
 }
 
-/************** JavaScript card ******************/
+/************ JavaScript card ************/
 .JS {
   height: 100%;
   position: absolute;
@@ -181,7 +194,7 @@ main{
   transform: rotateY(180deg);
 }
 
-/**********learn more button **************/
+/**********learn more button ************/
 
 #more{
   position:absolute;
