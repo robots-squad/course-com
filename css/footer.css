@@ -1,22 +1,25 @@
 footer{
-  position: relative;
-  bottom:0;
+  margin-top: 160px;
   display: block;
   height: 200px;
-  width: 100%;
-  background-color: #62bdf3;
+  background-color: whitesmoke;
+}
+
+footer #container{
+  position: relative;
+  bottom:0;
 }
 
 footer p{
   position: absolute;
-  left: 42%;
+  left: 45%;
   top: 6em;
   color: rgb(61, 60, 60);
 }
 
 #social{
   position: absolute;
-  right: 10px;
+  right: 50px;
   top: 85px;
 }
 
@@ -25,6 +28,7 @@ footer p{
   border: none;
   background-repeat: no-repeat;
   margin-right: 8px;
+  cursor: pointer;
 }
 
 #facebook{
@@ -88,4 +92,14 @@ footer nav a{
 
 footer nav a:hover{
   text-decoration: underline;
+}
+
+footer #footer-logo{
+  position: absolute;
+  left: 50%;
+  top: -28px
+}
+
+footer hr{
+  width: 70%;
 }

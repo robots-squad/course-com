@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+
 /*************************** main hero section ******************************/
 main{
   display: block;
-  height: 1500px;
+  height: 100%;
 }
 
 #hero{
@@ -9,35 +11,279 @@ main{
 }
 
 #hero img{
-  position:absolute;
-  top: 100px;
+  display: block;
   padding:0;
-  margin: 0;
+  margin-top: 100px;
   width: 100%;
 }
 
-
-/* silde section  */
-
-img{
-    width: 300px;
-    height: 300px;
-    
-}
-.next{
-    font-size: large;
-    text-transform: uppercase;
-    position:absolute;
-    top: 15%;
-    left:12% ;
-
-}
-.Previous{
-    font-size: large;
-    text-transform: uppercase;
-    position:absolute;
-    top: 15%;
-    left:4% ;
-
+#hero article{
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  text-align: center;
 }
 
+#hero #main-P{
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  line-height: 100px;
+}
+
+#hero #secondary-P{
+  font-size: 20px;
+  color: #4730d5;
+}
+
+#hero #third-P{
+  text-align: center;
+  padding-top: 90px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/********************************* info section *********************************/
+
+#info{
+  position: relative;
+}
+
+#info div{
+  height: 350px;
+  background-color: whitesmoke;
+}
+
+#info #fourth-P{
+  text-align: center;
+  padding-top: 90px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main #frontend{
+  margin-top: 100px;
+}
+
+main #backend{
+  background-color: white;
+}
+
+#frontend img{
+  position: absolute;
+  top: -10px;
+  left: 100px;
+}
+
+#frontend article{
+  position: absolute;
+  right: 15em;
+  top: 70px;
+}
+
+#info article p{
+  padding-top: 40px;
+  width: 500px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#info article h2{
+  font-size: 40px;
+  color: #4730d5;
+}
+
+#backend img{
+  position: absolute;
+  top: 330px;
+  right: 100px;
+}
+
+#backend article{
+  position: absolute;
+  left: 12em;
+  top: 26em;
+}
+
+#database img{
+  position: absolute;
+  top: 45em;
+  left: 100px;
+}
+
+#database article{
+  position: absolute;
+  right: 15em;
+  top: 47em;
+}
+
+
+/********************************* slide section *********************************/
+
+#slider p{
+  font-size: 35px;
+  padding-bottom: 70px;
+  font-family: 'Ubuntu Mono', Arial, Helvetica, sans-serif;
+}
+
+#slider span{
+  font-size: 18px;
+  color: blue;
+  font-family: 'Ubuntu Mono', Arial, Helvetica, sans-serif;
+}
+
+#slider{
+  display: block;
+  position: relative;
+  margin-top: 120px;
+  width: 100%;
+  height: 300px;
+}
+
+#slider button:hover{
+  cursor: pointer;
+  box-shadow: 5px 10px lightgray;
+}
+
+#slider button{
+  border:none;
+  border-radius: 10px;
+}
+
+/************ html card **********/
+
+
+.HTML {
+  height: 270px;
+  position: absolute;
+  left: 2%;
+  transform-style: preserve-3d;
+  transition: all 0.7s ease-in-out;
+  width: 220px;
+}
+
+.HTML:hover {
+  transform: rotateY(180deg);
+}
+
+.HTML .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.HTML .back {
+  transform: rotateY(180deg);
+}
+
+/************ css card **********/
+
+.CSS {
+  height: 270px;
+  position: absolute;
+  left: 19%;
+  transform-style: preserve-3d;
+  transition: all 0.7s ease-in-out;
+  width: 220px;
+}
+
+.CSS:hover {
+  transform: rotateY(180deg);
+}
+.CSS .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.CSS .back {
+  transform: rotateY(180deg);
+}
+
+/************ python card **********/
+
+.JS {
+  height: 270px;
+  position: absolute;
+  left: 36%;
+  transform-style: preserve-3d;
+  transition: all 0.7s ease-in-out;
+  width: 220px;
+}
+
+.JS:hover {
+  transform: rotateY(180deg);
+}
+.JS .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.JS .back {
+  transform: rotateY(180deg);
+}
+
+/************** Oracle card ************/
+
+.Oracle {
+  height: 270px;
+  position: absolute;
+  left: 53%;
+  transform-style: preserve-3d;
+  transition: all 0.7s ease-in-out;
+  width: 220px;
+}
+
+.Oracle:hover {
+  transform: rotateY(180deg);
+}
+.Oracle .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.Oracle .back {
+  transform: rotateY(180deg);
+}
+
+/************ JavaScript card ************/
+.Python {
+  height: 270px;
+  position: absolute;
+  left: 70%;
+  transform-style: preserve-3d;
+  transition: all 0.7s ease-in-out;
+  width: 220px;
+}
+
+.Python:hover {
+  transform: rotateY(180deg);
+}
+.Python .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.Python .back {
+  transform: rotateY(180deg);
+}
+
+/**********learn more button ************/
+
+#more{
+  position:absolute;
+  right: 70px;
+  top: 7em;
+  font-size: 20px;
+  font-weight: bold;
+  color: grey;
+}
+
+#more:hover{
+  color: blue;
+  cursor: pointer;
+  transform: scale(1.2);
+}
