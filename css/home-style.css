@@ -22,28 +22,98 @@ main{
   text-align: center;
 }
 
-#hero #main{
+#hero #main-P{
   font-size: 80px;
   font-weight: bold;
   margin-bottom: 15px;
   line-height: 100px;
 }
 
-#hero #secondary{
+#hero #secondary-P{
   font-size: 20px;
   color: #4730d5;
 }
 
-/********************************* info section *********************************/
-
-#info div{
-  height: 300px;
-  background-color: #62bef36e;
-  margin-top: 60px;
+#hero #third-P{
+  text-align: center;
+  padding-top: 90px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
+/********************************* info section *********************************/
 
+#info{
+  position: relative;
+}
 
+#info div{
+  height: 350px;
+  background-color: whitesmoke;
+}
+
+#info #fourth-P{
+  text-align: center;
+  padding-top: 90px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main #frontend{
+  margin-top: 100px;
+}
+
+main #backend{
+  background-color: white;
+}
+
+#frontend img{
+  position: absolute;
+  top: -10px;
+  left: 100px;
+}
+
+#frontend article{
+  position: absolute;
+  right: 15em;
+  top: 70px;
+}
+
+#info article p{
+  padding-top: 40px;
+  width: 500px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#info article h2{
+  font-size: 40px;
+  color: #4730d5;
+}
+
+#backend img{
+  position: absolute;
+  top: 330px;
+  right: 100px;
+}
+
+#backend article{
+  position: absolute;
+  left: 12em;
+  top: 26em;
+}
+
+#database img{
+  position: absolute;
+  top: 45em;
+  left: 100px;
+}
+
+#database article{
+  position: absolute;
+  right: 15em;
+  top: 47em;
+}
 
 
 
@@ -53,7 +123,7 @@ main{
 #slider{
   display: block;
   position:relative;
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .card-container {

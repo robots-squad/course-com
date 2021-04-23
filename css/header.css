@@ -19,7 +19,7 @@ header{
   height: 97px;
   width: 100%;
   min-height: 97px;
-  background: rgba(255, 255, 255, 0.7);
+  background: white;
   color: #4730d5;
   padding: 10px 0px;
   font-family: 'Righteous', cursive;
@@ -42,7 +42,7 @@ header h1{
 header nav{
   position: absolute;
   right: 230px;
-  top: 35px;
+  top: 37px;
 }
 
 header a{
