@@ -122,14 +122,23 @@ main #backend{
 
 #slider p{
   font-size: 35px;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
   font-family: 'Ubuntu Mono', Arial, Helvetica, sans-serif;
 }
 
-#slider span{
+#slider .link{
   font-size: 18px;
   color: blue;
   font-family: 'Ubuntu Mono', Arial, Helvetica, sans-serif;
+  border: 4px solid blue;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#slider .link:hover{
+  cursor: pointer;
+  background-color: blue;
+  color: white;
 }
 
 #slider{
@@ -141,7 +150,6 @@ main #backend{
 }
 
 #slider button:hover{
-  cursor: pointer;
   box-shadow: 5px 10px lightgray;
 }
 
@@ -151,7 +159,6 @@ main #backend{
 }
 
 /************ html card **********/
-
 
 .HTML {
   height: 270px;
