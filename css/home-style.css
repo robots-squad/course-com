@@ -116,8 +116,6 @@ main #backend{
 }
 
 
-
-
 /********************************* slide section *********************************/
 
 #slider{
@@ -127,7 +125,7 @@ main #backend{
 }
 
 .card-container {
-  height: 220px;
+  height: 270px;
   perspective: 600;
   position: relative;
   left: 50px;
@@ -151,7 +149,7 @@ main #backend{
   position: absolute;
   transform-style: preserve-3d;
   transition: all 0.7s ease-in-out;
-  width: 180px;
+  width: 220px;
 }
 
 .HTML:hover {
@@ -173,10 +171,10 @@ main #backend{
 .CSS {
   height: 100%;
   position: absolute;
-  left: 230px;
+  left: 16em;
   transform-style: preserve-3d;
   transition: all 0.7s ease-in-out;
-  width: 180px;
+  width: 220px;
 }
 
 .CSS:hover {
@@ -194,25 +192,25 @@ main #backend{
 
 /************ python card **********/
 
-.Python {
+.JS {
   height: 100%;
   position: absolute;
-  left: 29em;
+  left: 32em;
   transform-style: preserve-3d;
   transition: all 0.7s ease-in-out;
-  width: 180px;
+  width: 220px;
 }
 
-.Python:hover {
+.JS:hover {
   transform: rotateY(180deg);
 }
-.Python .side {
+.JS .side {
   backface-visibility: hidden;
   height: 100%;
   position: absolute;
   width: 100%;
 }
-.Python .back {
+.JS .back {
   transform: rotateY(180deg);
 }
 
@@ -221,10 +219,10 @@ main #backend{
 .Oracle {
   height: 100%;
   position: absolute;
-  left: 44em;
+  left: 48em;
   transform-style: preserve-3d;
   transition: all 0.7s ease-in-out;
-  width: 180px;
+  width: 220px;
 }
 
 .Oracle:hover {
@@ -241,25 +239,25 @@ main #backend{
 }
 
 /************ JavaScript card ************/
-.JS {
+.Python {
   height: 100%;
   position: absolute;
-  left: 59em;
+  left: 64em;
   transform-style: preserve-3d;
   transition: all 0.7s ease-in-out;
-  width: 180px;
+  width: 220px;
 }
 
-.JS:hover {
+.Python:hover {
   transform: rotateY(180deg);
 }
-.JS .side {
+.Python .side {
   backface-visibility: hidden;
   height: 100%;
   position: absolute;
   width: 100%;
 }
-.JS .back {
+.Python .back {
   transform: rotateY(180deg);
 }
 
@@ -267,8 +265,8 @@ main #backend{
 
 #more{
   position:absolute;
-  right: 98px;
-  top: 84px;
+  right: 70px;
+  top: 8em;
   width: 113px;
   height: 45px;
 }
