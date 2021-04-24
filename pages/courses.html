@@ -42,7 +42,9 @@
     <div id="courses-content">
       <p id="header">Courses</p> 
       <div id="html" class="card">
-        <div id="html-img" class="card-img"></div>
+        <div id="html-img" class="card-img">
+          <button id="html-topics" class="topics-button">View the Topics > </button>
+        </div>
         <p>Learn HTML In Arabic 2021</p>
         <ul class="key">
           <li>Duration: </li>
@@ -58,7 +60,11 @@
         </ul>
         <button id="html-button" class="card-button">Purchase</button>
         <button id="html-fav" class="card-fav">fav</button>
-        <button id="html-rate" class="card-rate">rate</button>
+        <div id='html-rating' class="rating">
+          <input type="range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+          <output></output> <br>
+          <button id="html-rate-button" class="rate-button">rate</button>
+        </div>
         <a href="#"><button id="html-course" class="card-course">Course link</button></a> 
       </div>
       <div class="popUp" id="html-popUp">
@@ -79,7 +85,9 @@
       </div>
 
       <div id="css" class="card">
-        <div id="css-img" class="card-img"></div>
+        <div id="css-img" class="card-img">
+          <button id="css-topics" class="topics-button">View the Topics > </button>
+        </div>
         <p>CSS-Style Your Website-Tutorial</p>
         <ul class="key">
           <li>Duration: </li>
@@ -95,7 +103,11 @@
         </ul>
         <button id="css-button" class="card-button">Purchase</button>
         <button id="css-fav" class="card-fav">fav</button>
-        <button id="css-rate" class="card-rate">rate</button>
+        <div id='css-rating' class="rating">
+          <input type="range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+          <output></output> <br>
+          <button id="css-rate-button" class="rate-button">rate</button>
+        </div>
         <a href="#"><button id="css-course" class="card-course">Course link</button></a> 
       </div>
       <div class="popUp" id="css-popUp">
@@ -116,7 +128,9 @@
       </div>
 
       <div id="js" class="card">
-        <div id="js-img" class="card-img"></div>
+        <div id="js-img" class="card-img">
+          <button id="js-topics" class="topics-button">View the Topics > </button>
+        </div>
         <p>Vanilla JavaScript</p>
         <ul class="key">
           <li>Duration: </li>
@@ -132,7 +146,11 @@
         </ul>
         <button id="js-button" class="card-button">Purchase</button>
         <button id="js-fav" class="card-fav">fav</button>
-        <button id="js-rate" class="card-rate">rate</button>
+        <div id='js-rating' class="rating">
+          <input type="range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+          <output></output> <br>
+          <button id="js-rate-button" class="rate-button">rate</button>
+        </div>
         <a href="#"><button id="js-course" class="card-course">Course link</button></a> 
       </div>
       <div class="popUp" id="js-popUp">
@@ -153,7 +171,9 @@
       </div>
 
       <div id="oracle" class="card">
-        <div id="oracle-img" class="card-img"></div>
+        <div id="oracle-img" class="card-img">
+          <button id="oracle-topics" class="topics-button">View the Topics > </button>
+        </div>
         <p>Oracle DBA Beginner to Advance</p>
         <ul class="key">
           <li>Duration: </li>
@@ -169,7 +189,11 @@
         </ul>
         <button id="oracle-button" class="card-button">Purchase</button>
         <button id="oracle-fav" class="card-fav">fav</button>
-        <button id="oracle-rate" class="card-rate">rate</button>
+        <div id='oracle-rating' class="rating">
+          <input type="range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+          <output></output> <br>
+          <button id="oracle-rate-button" class="rate-button">rate</button>
+        </div>
         <a href="#"><button id="oracle-course" class="card-course">Course link</button></a> 
       </div>
       <div class="popUp" id="oracle-popUp">
@@ -190,7 +214,9 @@
       </div>
 
       <div id="python" class="card">
-        <div id="python-img" class="card-img"></div>
+        <div id="python-img" class="card-img">
+          <button id="python-topics" class="topics-button">View the Topics > </button>
+        </div>
         <p>Python for Beginners</p>
         <ul class="key">
           <li>Duration: </li>
@@ -206,7 +232,11 @@
         </ul>
         <button id="python-button" class="card-button">Purchase</button>
         <button id="python-fav" class="card-fav">fav</button>
-        <button id="python-rate" class="card-rate">rate</button>
+        <div id='python-rating' class="rating">
+          <input type="range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+          <output></output> <br>
+          <button id="python-rate-button" class="rate-button">rate</button>
+        </div>
         <a href="#"><button id="python-course" class="card-course">Course link</button></a> 
       </div>
       <div class="popUp" id="python-popUp">
@@ -225,9 +255,6 @@
           <img src="../img/logo.png">
         </div>
       </div>
-
-
-
      </div>
   </main>
  

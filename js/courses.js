@@ -29,11 +29,11 @@ function Popup(content, card,close){
   }
 }
 
-Popup("html-popUp","html","close-html");
-Popup("css-popUp","css","close-css");
-Popup("js-popUp","js","close-js");
-Popup("oracle-popUp","oracle","close-oracle");
-Popup("python-popUp","python","close-python");
+Popup("html-popUp","html-topics","close-html");
+Popup("css-popUp","css-topics","close-css");
+Popup("js-popUp","js-topics","close-js");
+Popup("oracle-popUp","oracle-topics","close-oracle");
+Popup("python-popUp","python-topics","close-python");
 
 
 /************************ show and hide cards ************************************/
@@ -102,4 +102,3 @@ DataBaseButton.addEventListener('click',function(){
 
 
 });
-
