@@ -153,22 +153,38 @@ main{
 }
 
 
-.rating{
+.rating-slider{
   position:absolute;
   right: 20px;
-  top: 60px;
+  top: 94px;
 }
 
 .rate-button{
   position:absolute;
-  right: 50px;
-  top: 28px;
+  right: 20px;
+  top: 55px;
+  border-radius: 16px;
+  border: none;
+  background-color: rgb(196, 161, 3);
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+
+.rate-button:hover{
+  cursor: pointer;
 }
 
 .card-course{
   position:absolute;
-  right: 50px;
-  top:130px;
+  right: 20px;
+  top: 128px;
+  border-radius: 16px;
+  border: none;
+  background-color: rgb(3, 119, 196);
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
 }
 
 #html-img{
