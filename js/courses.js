@@ -34,7 +34,7 @@ Popup("css-popUp","css-topics","close-css");
 Popup("js-popUp","js-topics","close-js");
 Popup("oracle-popUp","oracle-topics","close-oracle");
 Popup("python-popUp","python-topics","close-python");
-
+// continue here 
 
 /************************ show and hide cards ************************************/
 
@@ -50,14 +50,15 @@ let CSScard = document.getElementById('css');
 let JScard = document.getElementById('js');
 let OracleCard = document.getElementById('oracle');
 let PyhtonCard = document.getElementById('python');
+// continue here 
 
 let AllArr = [HTMLcard,CSScard,JScard,OracleCard,PyhtonCard];
 let frontArr = [HTMLcard,CSScard,JScard];
 let backArr = [PyhtonCard];
 let dataBaseArr = [OracleCard];
+// continue adding to the above arrays  
 
 // event listners: 
-
 AllButton.addEventListener('click',function(){
 
   for(let i=0; i < AllArr.length; i++){
@@ -99,6 +100,5 @@ DataBaseButton.addEventListener('click',function(){
   for(let i=0; i <dataBaseArr.length; i++){
     dataBaseArr[i].style.display = 'block';
   }
-
 
 });

@@ -120,17 +120,38 @@ main{
   padding-right: 11px;
 }
 
-.card-button{
-  position:absolute;
-  right: 80px;
-  top:10px;
-}
-
-.card-fav{
+.buy-button{
   position:absolute;
   right: 20px;
   top:10px;
+  border-radius: 16px;
+  border: none;
+  padding: 5px 15px;
+  background-color: rgb(3, 196, 3);
+  color: white;
+  font-weight: bold;
 }
+
+.buy-button:hover{
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.fav{
+  position:absolute;
+  right: 140px;
+  top: 15px;
+  transform: scale(1.5);
+  font-size: 10px;
+}
+
+.label-fav{
+  position:absolute;
+  right: 165px;
+  top: 15px;
+}
+
 
 .rating{
   position:absolute;
