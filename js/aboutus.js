@@ -39,13 +39,25 @@ function gettingFeedFormLs() {
 function renderFeedBack() {
     feedbacks.textContent = '';
     textarea.value = '';
+    textName.value='';
+    
     let count = 0;
+
+    let feedText = null;
+    let feedName = null;
     for (let i = Feed.allFeeds.length - 1; i >= 0; i--) {
-        const feedli = document.createElement('li');
+        feedText = document.createElement('p');
+        feedText.setAttribute('class','feedText');
+        feedName = document.createElement('p');
+        feedName.setAttribute('class','feedName');
         count++;
-        feedli.textContent = `${Feed.allFeeds[i].feedback} `;
-        feedbacks.appendChild(feedli);
-        if (count == 5) {
+
+        feedText.textContent = `${Feed.allFeeds[i].feedback}`;
+        feedName.textContent = `${Feed.allFeeds[i].name}  (${Feed.allFeeds[i].data}) :`;
+        feedbacks.appendChild(feedName);
+        feedbacks.appendChild(feedText);
+        
+        if (count == 7) {
             break;
         }
     }
@@ -53,6 +65,11 @@ function renderFeedBack() {
 //////////////////////////////////////////////////////////////////////////////////////////
 function gettingFeedbackDate() {
     let d = new Date();
+    let time = d.toLocaleTimeString();
+    // let time = d.toTimeString();
+    let date = d.toDateString();
+    date += " " + time;
+    return date;
     // const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     // const monthNames = ["January", "February", "March", "April", "May", "June",  "July", "August", "September", "October", "November", "December"];
     // let day = days[d.getDay()];
@@ -60,11 +77,7 @@ function gettingFeedbackDate() {
     // console.log(month);
     // console.log( day);
     // console.log(typeof d);
-    let time = d.toLocaleTimeString();
-    // let time = d.toTimeString();
-    let date = d.toDateString();
-    date += " " + time;
-    return date;
+    
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 feedbackForm.addEventListener('submit', handleSubmit);

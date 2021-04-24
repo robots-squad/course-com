@@ -31,7 +31,236 @@
   </header>
  
   <main>
-    
+    <div id="courses-list">
+      <p>Categories</p> 
+      <button id="all">All</button> <br>
+      <button id="front">Front-End</button> <br>
+      <button id="back">Back-End</button> <br>
+      <button id="data">Database</button> <br>
+    </div>
+
+    <div id="courses-content">
+      <p id="header">Courses</p> 
+      <div id="html" class="card">
+        <div id="html-img" class="card-img">
+          <button id="html-topics" class="topics-button">View the Topics > </button>
+        </div>
+        <p>Learn HTML In Arabic 2021</p>
+        <ul class="key">
+          <li>Duration: </li>
+          <li>Difficulty: </li>
+          <li>Language: </li>
+          <li>Price: </li>
+        </ul>
+        <ul class="value">
+          <li>37 Lesson</li>
+          <li>Beginer</li>
+          <li>Arabic</li>
+          <li>15$</li>
+        </ul>
+        <button id="html-button" class="buy-button">Buy Now</button>
+        <label for="html-fav" class="label-fav">Fav</label>
+        <input type="checkbox" id="html-fav" class="fav">
+        <button id="html-rate-button" class="rate-button">Rate</button>
+        <div class="rating-slider">
+          <input type="range" id="html-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+          <output></output>
+        </div>
+        <a href="#"><button id="html-course" class="card-course">Course link</button></a> 
+      </div>
+      <div class="popUp" id="html-popUp">
+        <div class="popUp-content">
+          <span class="close" id="close-html">&times;</span>
+          <p>Topics:</p>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+          </ul> <br>
+          <p>The instructor: <br> ahmad ali</p>
+          <img src="../img/logo.png">
+        </div>
+      </div>
+
+      <div id="css" class="card">
+        <div id="css-img" class="card-img">
+          <button id="css-topics" class="topics-button">View the Topics > </button>
+        </div>
+        <p>CSS-Style Your Website-Tutorial</p>
+        <ul class="key">
+          <li>Duration: </li>
+          <li>Difficulty: </li>
+          <li>Language: </li>
+          <li>Price: </li>
+        </ul>
+        <ul class="value">
+          <li>20 Lesson</li>
+          <li>Beginer</li>
+          <li>English</li>
+          <li>20$</li>
+        </ul>
+        <button id="css-button" class="buy-button">Buy Now</button>
+        <label for="css-fav" class="label-fav">Fav</label>
+        <input type="checkbox" id="css-fav" class="fav">
+        <button id="css-rate-button" class="rate-button">Rate</button>
+        <div class="rating-slider">
+          <input type="range" id="css-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+          <output></output>
+        </div>
+        <a href="#"><button id="css-course" class="card-course">Course link</button></a> 
+      </div>
+      <div class="popUp" id="css-popUp">
+        <div class="popUp-content">
+          <span class="close" id="close-css">&times;</span>
+          <p>Topics:</p>
+          <ul>
+            <li>css</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+          </ul> <br>
+          <p>The instructor: <br> ahmad ali</p>
+          <img src="../img/logo.png">
+        </div>
+      </div>
+
+      <div id="js" class="card">
+        <div id="js-img" class="card-img">
+          <button id="js-topics" class="topics-button">View the Topics > </button>
+        </div>
+        <p>Vanilla JavaScript</p>
+        <ul class="key">
+          <li>Duration: </li>
+          <li>Difficulty: </li>
+          <li>Language: </li>
+          <li>Price: </li>
+        </ul>
+        <ul class="value">
+          <li>53 Lesson</li>
+          <li>Beginer</li>
+          <li>English</li>
+          <li>35$</li>
+        </ul>
+        <button id="js-button" class="buy-button">Buy Now</button>
+        <label for="js-fav" class="label-fav">Fav</label>
+        <input type="checkbox" id="js-fav" class="fav">
+        <button id="js-rate-button" class="rate-button">Rate</button>
+        <div class="rating-slider">
+          <input type="range" id="js-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+          <output></output>
+        </div>
+        <a href="#"><button id="js-course" class="card-course">Course link</button></a> 
+      </div>
+      <div class="popUp" id="js-popUp">
+        <div class="popUp-content">
+          <span class="close" id="close-js">&times;</span>
+          <p>Topics:</p>
+          <ul>
+            <li>js</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+          </ul> <br>
+          <p>The instructor: <br> ahmad ali</p>
+          <img src="../img/logo.png">
+        </div>
+      </div>
+
+      <div id="oracle" class="card">
+        <div id="oracle-img" class="card-img">
+          <button id="oracle-topics" class="topics-button">View the Topics > </button>
+        </div>
+        <p>Oracle DBA Beginner to Advance</p>
+        <ul class="key">
+          <li>Duration: </li>
+          <li>Difficulty: </li>
+          <li>Language: </li>
+          <li>Price: </li>
+        </ul>
+        <ul class="value" id="oracle-value">
+          <li>121 Lesson</li>
+          <li>intermediate</li>
+          <li>English</li>
+          <li>50$</li>
+        </ul>
+        <button id="oracle-button" class="buy-button">Buy Now</button>
+        <label for="oracle-fav" class="label-fav">Fav</label>
+        <input type="checkbox" id="oracle-fav" class="fav">
+        <button id="oracle-rate-button" class="rate-button">Rate</button>
+        <div class="rating-slider">
+          <input type="range" id="oracle-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+          <output></output>
+        </div>
+        <a href="#"><button id="oracle-course" class="card-course">Course link</button></a> 
+      </div>
+      <div class="popUp" id="oracle-popUp">
+        <div class="popUp-content">
+          <span class="close" id="close-oracle">&times;</span>
+          <p>Topics:</p>
+          <ul>
+            <li>oracle</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+          </ul> <br>
+          <p>The instructor: <br> ahmad ali</p>
+          <img src="../img/logo.png">
+        </div>
+      </div>
+
+      <div id="python" class="card">
+        <div id="python-img" class="card-img">
+          <button id="python-topics" class="topics-button">View the Topics > </button>
+        </div>
+        <p>Python for Beginners</p>
+        <ul class="key">
+          <li>Duration: </li>
+          <li>Difficulty: </li>
+          <li>Language: </li>
+          <li>Price: </li>
+        </ul>
+        <ul class="value">
+          <li>44 Lesson</li>
+          <li>Beginner</li>
+          <li>English</li>
+          <li>40$</li>
+        </ul>
+        <button id="python-button" class="buy-button">Buy Now</button>
+        <label for="python-fav" class="label-fav">Fav</label>
+        <input type="checkbox" id="python-fav" class="fav">
+        <button id="python-rate-button" class="rate-button">Rate</button>
+        <div class="rating-slider">
+          <input type="range" id="python-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+          <output></output>
+        </div>
+        <a href="#"><button id="python-course" class="card-course">Course link</button></a> 
+      </div>
+      <div class="popUp" id="python-popUp">
+        <div class="popUp-content">
+          <span class="close" id="close-python">&times;</span>
+          <p>Topics:</p>
+          <ul>
+            <li>python</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+          </ul> <br>
+          <p>The instructor: <br> ahmad ali</p>
+          <img src="../img/logo.png">
+        </div>
+      </div>
+     </div>
   </main>
  
   <footer>
@@ -53,6 +282,6 @@
       <img src="../img/logo-footer.png" id="footer-logo">
     </section>
   </footer>
-  <script src="../js/aboutus.js"></script>
+  <script src="../js/courses.js"></script>
 </body>
 </html>
