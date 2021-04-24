@@ -118,21 +118,21 @@
     </section> 
  
     <section id="form-section">
-      <p>Tell Us ...</p> 
+      <p id="feedheader">Tell Us ...</p> 
       <form id="feedbackForm">
         <label for="name">Your Name</label> <br>
-        <input id="name" type="text" name="name" placeholder="Enter Your name here ">
+        <input id="name" type="text" name="name" placeholder="Enter Your name here " required minlength="2" maxlength="20" pattern="[^0-9]+" title="Please enter text only" autocomplete="off">
         <br>
         <label for="textarea">Your Feedback</label> <br>
-        <input id="textarea" type="text" name="feedback" placeholder="Enter Your review here ">
+        <input id="textarea" type="text" name="feedback" placeholder="Enter Your review here" minlength="10" required autocomplete="off" maxlength="45">
         <br>
         <button type="submit">Submit</button>
       </form>
 
       <div id="results">
         <h3> Most Recent FeedBacks:</h3>
-        <ul id="feedbacks">
-        </ul>
+        <div id="feedbacks">
+        </div>
       </div>
     </section>
   </main>
