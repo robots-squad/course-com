@@ -33,17 +33,18 @@ main{
   border-bottom: 1px solid black;
 }
 
-#courses-list a{
-  display: inline-block;
-  text-decoration: none;
-  padding-top: 80px;
+#courses-list button{
+  margin-top: 80px;
   color: black;
   font-size: 20px;
+  border:none;
+  background-color: transparent;
 }
 
-#courses-list a:hover{
+#courses-list button:hover{
   text-decoration: underline;
   color: blue;
+  cursor: pointer;
 }
 
 #header{

@@ -33,3 +33,73 @@ Popup("html-popUp","html","close-html");
 Popup("css-popUp","css","close-css");
 Popup("js-popUp","js","close-js");
 Popup("oracle-popUp","oracle","close-oracle");
+Popup("python-popUp","python","close-python");
+
+
+/************************ show and hide cards ************************************/
+
+//list buttons:
+let AllButton = document.getElementById('all');
+let FrontButton = document.getElementById('front');
+let BackButton = document.getElementById('back');
+let DataBaseButton = document.getElementById('data');
+
+// cards:
+let HTMLcard = document.getElementById('html');
+let CSScard = document.getElementById('css');
+let JScard = document.getElementById('js');
+let OracleCard = document.getElementById('oracle');
+let PyhtonCard = document.getElementById('python');
+
+let AllArr = [HTMLcard,CSScard,JScard,OracleCard,PyhtonCard];
+let frontArr = [HTMLcard,CSScard,JScard];
+let backArr = [PyhtonCard];
+let dataBaseArr = [OracleCard];
+
+// event listners: 
+
+AllButton.addEventListener('click',function(){
+
+  for(let i=0; i < AllArr.length; i++){
+    AllArr[i].style.display = 'block';
+  }
+
+});
+
+FrontButton.addEventListener('click',function(){
+
+  for(let i=0; i < AllArr.length; i++){
+    AllArr[i].style.display = 'none';
+  }
+
+  for(let i=0; i <frontArr.length; i++){
+    frontArr[i].style.display = 'block';
+  }
+
+});
+
+BackButton.addEventListener('click',function(){
+
+  for(let i=0; i < AllArr.length; i++){
+    AllArr[i].style.display = 'none';
+  }
+
+  for(let i=0; i <backArr.length; i++){
+    backArr[i].style.display = 'block';
+  }
+
+});
+
+DataBaseButton.addEventListener('click',function(){
+
+  for(let i=0; i < AllArr.length; i++){
+    AllArr[i].style.display = 'none';
+  }
+
+  for(let i=0; i <dataBaseArr.length; i++){
+    dataBaseArr[i].style.display = 'block';
+  }
+
+
+});
+
