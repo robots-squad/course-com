@@ -33,6 +33,9 @@ main{
   font-size: 30px;
   font-weight: bold;
   border-bottom: 1px solid black;
+  background-color: rgb(228, 228, 228);
+  color: #4730d5;
+  border-radius: 10px;
 }
 
 #courses-list button{
@@ -41,12 +44,15 @@ main{
   font-size: 20px;
   border:none;
   background-color: transparent;
+  width: 91%;
+  color: rgb(63, 63, 63);
 }
 
 #courses-list button:hover{
-  text-decoration: underline;
-  color: blue;
+  transform: scale(1.1);
   cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.527);
+  border-radius: 5px;
 }
 
 #header{
@@ -56,6 +62,9 @@ main{
   font-size: 30px;
   font-weight: bold;
   border-bottom: 1px solid black;
+  background-color: rgb(228, 228, 228);
+  color: #4730d5;
+  border-radius: 10px;
 }
 
 
@@ -172,6 +181,8 @@ main{
 
 .rate-button:hover{
   cursor: pointer;
+  background-color: white;
+  color: black;
 }
 
 .card-course{
@@ -224,7 +235,8 @@ main{
 .topics-button:hover{
   cursor: pointer;
   color: blue;
-  text-decoration: underline;
+  transform: scale(1.05);
+  font-weight: bold;
 }
 
 
@@ -264,4 +276,15 @@ main{
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.popup-data{
+  position: relative;
+  width: 90%;
+}
+
+iframe{
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
