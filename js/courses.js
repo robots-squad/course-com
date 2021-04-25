@@ -37,7 +37,7 @@ Popup("js-popUp","js-topics","close-js");
 
 Popup("python-popUp","python-topics","close-python");
 Popup("nodejs-popUp","nodejs-topics","close-nodejs");
-Popup("c++-popUp","c++-topics","close-c++");
+Popup("cplus-popUp","cplus-topics","close-cplus");
 
 
 Popup("oracle-popUp","oracle-topics","close-oracle");
@@ -62,7 +62,7 @@ let PyhtonCard = document.getElementById('python');
 
 
 let NodejsCard = document.getElementById('nodejs');
-let CCard = document.getElementById('c++');
+let CCard = document.getElementById('cplus');
 
 let OracleCard = document.getElementById('oracle');
 let sqlCard = document.getElementById('sql');
@@ -139,7 +139,7 @@ let css = new Cards('css','../img/CSS.png');
 let js = new Cards('js','../img/JS.png');
 let python = new Cards('python','../img/python.png');
 let nodejs = new Cards('nodejs', '../img/Nodejs.png');
-let cpluse = new Cards('cpluse', '../img/c++.jpg');
+let cplus = new Cards('cplus', '../img/cplus.jpg');
 let oracle = new Cards('oracle','../img/oracle.png');
 let sql = new Cards('sql', '../img/sql.png');
 let mongodb = new Cards('mongodb','../img/mongodb.jpg');
@@ -170,7 +170,7 @@ BuyCourse('css-button','css-course',css);
 BuyCourse('js-button','js-course',js);
 BuyCourse('python-button','python-course',python);
 BuyCourse('nodejs-button','nodejs-course',nodejs);
-BuyCourse('c++-button','c++-course',cpluse);
+BuyCourse('cplus-button','cplus-course',cplus);
 BuyCourse('oracle-button','oracle-course',oracle);
 BuyCourse('sql-button','sql-course',sql);
 BuyCourse('mongodb-button','mongodb-course',mongodb);
@@ -195,7 +195,7 @@ Fav('sql-fav',sql);
 Fav('mongodb-fav',mongodb);
 Fav('python-fav',python);
 Fav('nodejs-fav',nodejs);
-Fav('c++-fav',cpluse);
+Fav('cplus-fav',cplus);
 
 
 // rate:
@@ -223,10 +223,10 @@ Rate('css-rate-button','css-rating-slider',css);
 Rate('js-rate-button','js-rating-slider',js);
 Rate('oracle-rate-button','oracle-rating-slider',oracle);
 Rate('sql-rate-button','sql-rating-slider',sql);
-Rate('mongodb-rate-button','mongondb-rating-slider',mongodb);
+Rate('mongodb-rate-button','mongodb-rating-slider',mongodb);
 Rate('python-rate-button','python-rating-slider',python);
 Rate('nodejs-rate-button','nodejs-rating-slider',nodejs);
-Rate('c++-rate-button','c++-rating-slider',cpluse);
+Rate('cplus-rate-button','cplus-rating-slider',cplus);
 
 
 ///////////////////////////////////////////////Local Storage//////////////////////////////

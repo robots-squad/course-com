@@ -204,7 +204,7 @@ main{
 }
 
 /************************!!!!! add other courses !!!!!! *************** */
-#html-course, #css-course{
+#html-course, #css-course , #js-course , #oracle-course , #sql-course , #mongodb-course, #python-course , #nodejs-course , #cplus-course{
   display: none;
 }
 
@@ -235,7 +235,7 @@ main{
 }
 
 
-#c-img{
+#cplus-img{
   background-image: url(../img/c++.jpg);
   background-color: rgba(3, 97, 126, 0.473);
 }
