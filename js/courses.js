@@ -111,7 +111,7 @@ function Cards(name, src) {
   this.src = src;
   this.buy= false;
   this.fav = false;
-  this.rate;
+  this.rate=0;
   Cards.allCourses.push(this);
   saveTols();
 }//End constructor
@@ -120,8 +120,11 @@ Cards.allCourses = [];
 
 let html = new Cards('html','../img/HTML.png');
 let css = new Cards('css','../img/CSS.png');
+let js = new Cards('js','../img/JS.png');
+let oracle = new Cards('oracle','../img/oracle.png');
+let python = new Cards('python','../img/python.png');
 
-/********************************* Html Card *************************************/
+/*********************************  Card Functions *************************************/
 
 // Buy:
 
@@ -135,14 +138,18 @@ function BuyCourse(buttonId, linkId, object){
     object.buy = true;
     // add to profile page
     alert('Thanks for Buying');
-    this.style.display = 'none';
+    // this.style.display = 'none';
+    this.style.pointerEvents = 'none';
+    this.style.opacity = '0.3';
     Link.style.display = 'block';
-
   });
-};
+}
 
 BuyCourse('html-button','html-course',html);
 BuyCourse('css-button','css-course',css);
+BuyCourse('js-button','js-course',js);
+BuyCourse('oracle-button','oracle-course',oracle);
+BuyCourse('python-button','python-course',python);
 
 
 // fav:
@@ -158,6 +165,9 @@ function Fav(favId, Object){
 
 Fav('html-fav',html);
 Fav('css-fav',css);
+Fav('js-fav',js);
+Fav('oracle-fav',oracle);
+Fav('python-fav',python);
 
 
 // rate:
@@ -170,16 +180,21 @@ function Rate(rateButtonId, sliderId, Object){
   Rate.addEventListener('click', function(){
   
     let Range = document.getElementById('html-range');
-    Object.rate = parseInt(Range.value);
+    Object.rate += parseInt(Range.value);
     alert('Thanks for rating');
-    this.style.display = 'none';
-    Slider.style.display = 'none';
+    this.style.pointerEvents = 'none';
+    this.style.opacity = '0.3';
+    Slider.style.pointerEvents = 'none';
+    Slider.style.opacity = '0.3';
   });
 
 }
 
 Rate('html-rate-button','html-rating-slider',html);
 Rate('css-rate-button','css-rating-slider',css);
+Rate('js-rate-button','js-rating-slider',js);
+Rate('oracle-rate-button','oracle-rating-slider',oracle);
+Rate('python-rate-button','python-rating-slider',python);
 
 
 ///////////////////////////////////////////////Local Storage//////////////////////////////
