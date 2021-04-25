@@ -176,9 +176,9 @@ function Rate(rateButtonId, sliderId, Object){
 
   let Rate = document.getElementById(rateButtonId);
   let Slider = document.getElementById(sliderId);
-  
+
   Rate.addEventListener('click', function(){
-  
+
     let Range = document.getElementById('html-range');
     Object.rate += parseInt(Range.value);
     alert('Thanks for rating');
@@ -213,6 +213,17 @@ for(let i=0; i < Cards.allCourses.length;i++ ){
     saveTols();
   });
 }
+
+/////////////// Git local storage///////////////
+function getLs()
+{
+  let data=localStorage.getItem('courses');
+  console.log('gitelmentttt'+data);
+  let item=JSON.parse(data);
+  console.log('item '+ item);
+Cards.
+}
+getLs();
 
 
 
