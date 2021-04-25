@@ -213,15 +213,38 @@ main{
   background-color: rgba(4, 13, 102, 0.473);
 }
 
+#python-img{
+  background-image: url(../img/python.png);
+  background-color: rgba(3, 97, 126, 0.473);
+}
+
+#Nodejs-img{
+  background-image: url(../img/Nodejs.png);
+  background-color: rgba(3, 97, 126, 0.473);
+}
+
+
+#c-img{
+  background-image: url(../img/c++.jpg);
+  background-color: rgba(3, 97, 126, 0.473);
+}
+
 #oracle-img{
   background-image: url(../img/oracle.png);
   background-color: rgba(31, 126, 3, 0.473);
 }
 
-#python-img{
-  background-image: url(../img/python.png);
+#sql-img{
+  background-image: url(../img/sql.png);
   background-color: rgba(3, 97, 126, 0.473);
 }
+
+#mongodb-img{
+  background-image: url(../img/mongodb.jpg);
+  background-color: rgba(3, 97, 126, 0.473);
+}
+
+
 
 .topics-button{
   position: absolute;
@@ -251,9 +274,23 @@ main{
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0,0,0); /* Fallback color*/
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/
 }
+
+/*.popUp {
+  display: none; /* Hidden by default */
+  /*position: fixed; /* Stay in place */
+  /*z-index: 1; /* Sit on top */
+  /*padding-top: 100px; /* Location of the box */
+  /*left: 0;*/
+  /*top: 100px;
+  width: 70%; /* Full width */
+  /*height: 100%; /* Full height */
+  /*overflow: auto; /* Enable scroll if needed */
+  /*background-color: rgb(0,0,0); /* Fallback color */
+  /*background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/*} */
 
 .popUp-content {
   background-color: #fefefe;
@@ -285,6 +322,6 @@ main{
 
 iframe{
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 0px;
+  top: 0px;
 }

@@ -32,9 +32,15 @@ function Popup(content, card,close){
 Popup("html-popUp","html-topics","close-html");
 Popup("css-popUp","css-topics","close-css");
 Popup("js-popUp","js-topics","close-js");
-Popup("oracle-popUp","oracle-topics","close-oracle");
+
 Popup("python-popUp","python-topics","close-python");
-// continue here 
+Popup("Nodejs-popUp","Nodejs-topics","close-Nodejs");
+Popup("c++-popUp","c++-topics","close-c++");
+
+
+Popup("oracle-popUp","oracle-topics","close-oracle");
+Popup("sql-popUp","sql-topics","close-sql");
+Popup("mongodb-popUp","mongodb-topics","close-mongodb");
 
 /************************ show and hide cards ************************************/
 
@@ -48,15 +54,20 @@ let DataBaseButton = document.getElementById('data');
 let HTMLcard = document.getElementById('html');
 let CSScard = document.getElementById('css');
 let JScard = document.getElementById('js');
-let OracleCard = document.getElementById('oracle');
-let PyhtonCard = document.getElementById('python');
-// continue here 
 
-let AllArr = [HTMLcard,CSScard,JScard,OracleCard,PyhtonCard];
+let PyhtonCard = document.getElementById('python');
+let NodejsCard = document.getElementById('Nodejs');
+let CCard = document.getElementById('c++');
+
+let OracleCard = document.getElementById('oracle');
+let sqlCard = document.getElementById('sql');
+let mongodbCard = document.getElementById('mongodb');
+
+
+let AllArr = [HTMLcard,CSScard,JScard,PyhtonCard,NodejsCard,CCard,OracleCard,sqlCard,mongodbCard];
 let frontArr = [HTMLcard,CSScard,JScard];
-let backArr = [PyhtonCard];
-let dataBaseArr = [OracleCard];
-// continue adding to the above arrays  
+let backArr = [PyhtonCard,NodejsCard,CCard];
+let dataBaseArr = [OracleCard,sqlCard,mongodbCard];
 
 // event listners: 
 AllButton.addEventListener('click',function(){
