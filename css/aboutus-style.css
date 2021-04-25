@@ -1,4 +1,6 @@
 /**********      section       ************/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 main{
     display: block;
     height: 100%;
@@ -17,11 +19,13 @@ main{
 }
 
 #secA h3{
-    font-size: 50px;
+    font-size: 70px;
     padding-top: 90px;
     padding-right: 20px;
     padding-left: 20px;
     margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+    color:#4730d5;
 
 }
 
@@ -48,14 +52,18 @@ main{
     text-align: center;
     background-color: whitesmoke;
     border-radius: 20px;
+    
 }
 
 #images #main {
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     padding: 30px 0px;
     margin-bottom: 50px;
     margin-top: 20px ;
+    font-family: 'Lobster', cursive;
+    color:#4730d5;
+
 }
  
 #abdulla{
@@ -168,9 +176,11 @@ main{
 
 #feedheader{
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     padding-bottom: 30px;
     padding-top: 20px;
+    font-family: 'Lobster', cursive;
+    color:#4730d5;
 }
 
 #form-section input{
