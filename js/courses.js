@@ -121,101 +121,66 @@ Cards.allCourses = [];
 let html = new Cards('html','../img/HTML.png');
 let css = new Cards('css','../img/CSS.png');
 
-
 /********************************* Html Card *************************************/
 
 // Buy:
 
-let htmlBuyBtn = document.getElementById('html-button');
-let htmlLink = document.getElementById('html-course');
+function BuyCourse(buttonId, linkId, object){
 
-htmlBuyBtn.addEventListener('click', function () {
- 
-  html.buy = true;
-  // add to profile page
-  alert('Thanks for Buying');
-  this.style.display = 'none';
-  htmlLink.style.display = 'block';
+  let BuyBtn = document.getElementById(buttonId);
+  let Link = document.getElementById(linkId);
 
-});
+  BuyBtn.addEventListener('click', function () {
+
+    object.buy = true;
+    // add to profile page
+    alert('Thanks for Buying');
+    this.style.display = 'none';
+    Link.style.display = 'block';
+
+  });
+};
+
+BuyCourse('html-button','html-course',html);
+BuyCourse('css-button','css-course',css);
+
 
 // fav:
+function Fav(favId, Object){
 
-let htmlFav = document.getElementById('html-fav');
+  let Fav = document.getElementById(favId);
 
-htmlFav.addEventListener('change', function (e) {
- 
-  if(e.target.checked === true){
-    html.fav = true;
+  Fav.addEventListener('click', function (e) {
 
-    // add to profile page
-  }else{
-    html.fav = false;
-  }
- 
-});
+    Object.fav = e.target.checked;
+  });
+}
+
+Fav('html-fav',html);
+Fav('css-fav',css);
+
 
 // rate:
 
-let htmlRate = document.getElementById('html-rate-button');
-let htmlSlider = document.getElementById('html-rating-slider');
+function Rate(rateButtonId, sliderId, Object){
 
-htmlRate.addEventListener('click', function(){
+  let Rate = document.getElementById(rateButtonId);
+  let Slider = document.getElementById(sliderId);
+  
+  Rate.addEventListener('click', function(){
+  
+    let Range = document.getElementById('html-range');
+    Object.rate = parseInt(Range.value);
+    alert('Thanks for rating');
+    this.style.display = 'none';
+    Slider.style.display = 'none';
+  });
 
-  let htmlRange = document.getElementById('html-range');
-  html.rate = parseInt(htmlRange.value);
-  alert('Thanks for rating');
-  this.style.display = 'none';
-  htmlSlider.style.display = 'none';
-});
+}
 
-/********************************* css Card *************************************/
+Rate('html-rate-button','html-rating-slider',html);
+Rate('css-rate-button','css-rating-slider',css);
 
-// Buy:
-
-let cssBuyBtn = document.getElementById('css-button');
-let cssLink = document.getElementById('css-course');
-
-cssBuyBtn.addEventListener('click', function () {
- 
-  css.buy = true;
-  // add to profile page
-  console.log(css);
-  alert('Thanks for Buying');
-  this.style.display = 'none';
-  cssLink.style.display = 'block';
-});
-
-// fav:
-
-let cssFav = document.getElementById('css-fav');
-
-cssFav.addEventListener('change', function (e) {
- 
-  if(e.target.checked === true){
-    css.fav = true;
-    // add to profile page
-  }else{
-    css.fav = false;
-  }
-  console.log(css);
- 
-});
-
-// rate:
-
-let cssRate = document.getElementById('css-rate-button');
-let cssSlider = document.getElementById('css-rating-slider');
-
-cssRate.addEventListener('click', function(){
-
-  let cssRange = document.getElementById('css-range');
-  css.rate = parseInt(cssRange.value);
-  alert('Thanks for rating');
-  this.style.display = 'none';
-  cssSlider.style.display = 'none';
-  console.log(css);
-});
 
 ///////////////////////////////////////////////Local Storage//////////////////////////////
 function saveTols()
@@ -232,7 +197,9 @@ for(let i=0; i < Cards.allCourses.length;i++ ){
   card.addEventListener('click',function(){
     saveTols();
   });
-
 }
+
+
+
 
 
