@@ -197,6 +197,17 @@ main{
   padding: 5px 15px;
 }
 
+.card-course:hover{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+/************************!!!!! add other courses !!!!!! *************** */
+#html-course, #css-course{
+  display: none;
+}
+
 #html-img{
   background-image: url(../img/HTML.png);
   background-color: rgba(255, 166, 0, 0.473);

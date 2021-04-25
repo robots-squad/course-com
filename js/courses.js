@@ -113,6 +113,7 @@ function Cards(name, src) {
   this.fav = false;
   this.rate;
   Cards.allCourses.push(this);
+  saveTols();
 }//End constructor
 
 Cards.allCourses = [];
@@ -120,19 +121,22 @@ Cards.allCourses = [];
 let html = new Cards('html','../img/HTML.png');
 let css = new Cards('css','../img/CSS.png');
 
+
 /********************************* Html Card *************************************/
 
 // Buy:
 
 let htmlBuyBtn = document.getElementById('html-button');
+let htmlLink = document.getElementById('html-course');
 
 htmlBuyBtn.addEventListener('click', function () {
  
   html.buy = true;
   // add to profile page
-  console.log(html);
   alert('Thanks for Buying');
   this.style.display = 'none';
+  htmlLink.style.display = 'block';
+
 });
 
 // fav:
@@ -143,11 +147,11 @@ htmlFav.addEventListener('change', function (e) {
  
   if(e.target.checked === true){
     html.fav = true;
+
     // add to profile page
   }else{
     html.fav = false;
   }
-  console.log(html);
  
 });
 
@@ -163,8 +167,72 @@ htmlRate.addEventListener('click', function(){
   alert('Thanks for rating');
   this.style.display = 'none';
   htmlSlider.style.display = 'none';
-  console.log(html);
 });
 
+/********************************* css Card *************************************/
+
+// Buy:
+
+let cssBuyBtn = document.getElementById('css-button');
+let cssLink = document.getElementById('css-course');
+
+cssBuyBtn.addEventListener('click', function () {
+ 
+  css.buy = true;
+  // add to profile page
+  console.log(css);
+  alert('Thanks for Buying');
+  this.style.display = 'none';
+  cssLink.style.display = 'block';
+});
+
+// fav:
+
+let cssFav = document.getElementById('css-fav');
+
+cssFav.addEventListener('change', function (e) {
+ 
+  if(e.target.checked === true){
+    css.fav = true;
+    // add to profile page
+  }else{
+    css.fav = false;
+  }
+  console.log(css);
+ 
+});
+
+// rate:
+
+let cssRate = document.getElementById('css-rate-button');
+let cssSlider = document.getElementById('css-rating-slider');
+
+cssRate.addEventListener('click', function(){
+
+  let cssRange = document.getElementById('css-range');
+  css.rate = parseInt(cssRange.value);
+  alert('Thanks for rating');
+  this.style.display = 'none';
+  cssSlider.style.display = 'none';
+  console.log(css);
+});
+
+///////////////////////////////////////////////Local Storage//////////////////////////////
+function saveTols()
+{
+  let arrstr=JSON.stringify(Cards.allCourses);
+  localStorage.setItem('courses',arrstr);
+}
+
+let card = null;
+for(let i=0; i < Cards.allCourses.length;i++ ){
+
+  card = document.getElementsByClassName('card')[i];
+
+  card.addEventListener('click',function(){
+    saveTols();
+  });
+
+}
 
 
