@@ -36,7 +36,7 @@ Popup("css-popUp","css-topics","close-css");
 Popup("js-popUp","js-topics","close-js");
 
 Popup("python-popUp","python-topics","close-python");
-Popup("Nodejs-popUp","Nodejs-topics","close-Nodejs");
+Popup("nodejs-popUp","nodejs-topics","close-nodejs");
 Popup("c++-popUp","c++-topics","close-c++");
 
 
@@ -61,7 +61,7 @@ let JScard = document.getElementById('js');
 let PyhtonCard = document.getElementById('python');
 
 
-let NodejsCard = document.getElementById('Nodejs');
+let NodejsCard = document.getElementById('nodejs');
 let CCard = document.getElementById('c++');
 
 let OracleCard = document.getElementById('oracle');
