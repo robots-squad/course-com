@@ -137,8 +137,12 @@ Cards.allCourses = [];
 let html = new Cards('html','../img/HTML.png');
 let css = new Cards('css','../img/CSS.png');
 let js = new Cards('js','../img/JS.png');
-let oracle = new Cards('oracle','../img/oracle.png');
 let python = new Cards('python','../img/python.png');
+let nodejs = new Cards('nodejs', '../img/Nodejs.png');
+let cpluse = new Cards('cpluse', '../img/c++.jpg');
+let oracle = new Cards('oracle','../img/oracle.png');
+let sql = new Cards('sql', '../img/sql.png');
+let mongodb = new Cards('mongodb','../img/mongodb.jpg');
 
 /*********************************  Card Functions *************************************/
 
@@ -164,8 +168,12 @@ function BuyCourse(buttonId, linkId, object){
 BuyCourse('html-button','html-course',html);
 BuyCourse('css-button','css-course',css);
 BuyCourse('js-button','js-course',js);
-BuyCourse('oracle-button','oracle-course',oracle);
 BuyCourse('python-button','python-course',python);
+BuyCourse('nodejs-button','nodejs-course',nodejs);
+BuyCourse('c++-button','c++-course',cpluse);
+BuyCourse('oracle-button','oracle-course',oracle);
+BuyCourse('sql-button','sql-course',sql);
+BuyCourse('mongodb-button','mongodb-course',mongodb);
 
 
 // fav:
@@ -183,7 +191,11 @@ Fav('html-fav',html);
 Fav('css-fav',css);
 Fav('js-fav',js);
 Fav('oracle-fav',oracle);
+Fav('sql-fav',sql);
+Fav('mongodb-fav',mongodb);
 Fav('python-fav',python);
+Fav('nodejs-fav',nodejs);
+Fav('c++-fav',cpluse);
 
 
 // rate:
@@ -210,7 +222,11 @@ Rate('html-rate-button','html-rating-slider',html);
 Rate('css-rate-button','css-rating-slider',css);
 Rate('js-rate-button','js-rating-slider',js);
 Rate('oracle-rate-button','oracle-rating-slider',oracle);
+Rate('sql-rate-button','sql-rating-slider',sql);
+Rate('mongodb-rate-button','mongondb-rating-slider',mongodb);
 Rate('python-rate-button','python-rating-slider',python);
+Rate('nodejs-rate-button','nodejs-rating-slider',nodejs);
+Rate('c++-rate-button','c++-rating-slider',cpluse);
 
 
 ///////////////////////////////////////////////Local Storage//////////////////////////////
