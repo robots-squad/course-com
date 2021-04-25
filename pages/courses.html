@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>CourseCom | Courses</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/courses-style.css">
+  <meta charset="UTF-8">
+  <title>CourseCom | Courses</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/courses-style.css">
 </head>
 
 <body>
@@ -29,18 +29,21 @@
       </div>
     </div>
   </header>
- 
+
   <main>
     <div id="courses-list">
-      <p>Categories</p> 
+      <p>Categories</p>
       <button id="all">All</button> <br>
       <button id="front">Front-End</button> <br>
       <button id="back">Back-End</button> <br>
       <button id="data">Database</button> <br>
     </div>
 
+    <!------------------------------BEGINNING OF THE CARDS------------------------------------------>
+
+    <!------------------------------HTML / FRONT-END------------------------------------------>
     <div id="courses-content">
-      <p id="header">Courses</p> 
+      <p id="header">Courses</p>
       <div id="html" class="card">
         <div id="html-img" class="card-img">
           <button id="html-topics" class="topics-button">View the Topics > </button>
@@ -66,27 +69,33 @@
           <input type="range" id="html-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
           <output></output>
         </div>
-        <a href="#"><button id="html-course" class="card-course">Course link</button></a> 
+        <a href="#"><button id="html-course" class="card-course">Course link</button></a>
       </div>
       <div class="popUp" id="html-popUp">
         <div class="popUp-content">
           <span class="close" id="close-html">&times;</span>
           <div class="popup-data">
             <p>Topics:</p>
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
-              <li>6</li>
-            </ul> <br>
-            <p>The instructor: <br> ahmad ali</p>
-            <img src="../img/logo.png"> <br>
-            <iframe width="200" height="200" src="https://www.youtube.com/embed/6QAELgirvjs?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <ol>
+              <li> Introduction to HTML5 and Web Design</li>
+              <li> How to Create a Simple Web Page</li>
+              <li> How to Format Your Text</li>
+              <li> Adding Web Links and Images</li>
+              <li>Creating Tables</li>
+              <li>Forms</li>
+            </ol> <br>
+            <p>The instructor: <br> <br> Ahmad Ali</p>
+            <img src="../img/html.inst.jpg"> <br>
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/6QAELgirvjs"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
       </div>
+
+      <!------------------------------CSS / FRONT-END------------------------------------------>
 
       <div id="css" class="card">
         <div id="css-img" class="card-img">
@@ -113,28 +122,35 @@
           <input type="range" id="css-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
           <output></output>
         </div>
-        <a href="#"><button id="css-course" class="card-course">Course link</button></a> 
+        <a href="#"><button id="css-course" class="card-course">Course link</button></a>
       </div>
       <div class="popUp" id="css-popUp">
         <div class="popUp-content">
           <span class="close" id="close-css">&times;</span>
-          
+
           <div class="popup-data">
             <p>Topics:</p>
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
-              <li>6</li>
-            </ul> <br>
-            <p>The instructor: <br> ahmad ali</p>
-            <img src="../img/logo.png"> <br>
-            <iframe width="200" height="200" src="https://www.youtube.com/embed/6QAELgirvjs?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <ol>
+              <li>Introduction to CSS: Why Use CSS?</li>
+              <li>CSS Syntax</li>
+              <li>HTML 5 and CSS</li>
+              <li>Setting Up Web Pages with CSS</li>
+              <li>Styling Text, Font, and Properties</li>
+              <li>Styling Page Backgrounds</li>
+            </ol> <br>
+            <p>The instructor: <br> <br> Mike Dane</p>
+            <img src="../img/css-instt.jpg"> <br>
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/WZ2uqGkHoR0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
       </div>
+
+
+      <!------------------------------JAVASCRIPT / FRONT-END------------------------------------------>
 
       <div id="js" class="card">
         <div id="js-img" class="card-img">
@@ -161,74 +177,35 @@
           <input type="range" id="js-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
           <output></output>
         </div>
-        <a href="#"><button id="js-course" class="card-course">Course link</button></a> 
+        <a href="#"><button id="js-course" class="card-course">Course link</button></a>
       </div>
       <div class="popUp" id="js-popUp">
         <div class="popUp-content">
           <span class="close" id="close-js">&times;</span>
           <div class="popup-data">
             <p>Topics:</p>
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
-              <li>6</li>
-            </ul> <br>
-            <p>The instructor: <br> ahmad ali</p>
-            <img src="../img/logo.png"> <br>
-            <iframe width="200" height="200" src="https://www.youtube.com/embed/6QAELgirvjs?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <ol>
+              <li>Variable Naming Rules and JavaScript Data Types</li>
+              <li>Expressions and Operators</li>
+              <li>Flow Control</li>
+              <li>Objects and Arrays</li>
+              <li>Defining Functions and Methods</li>
+              <li>Constructors and Inheritance</li>
+            </ol> <br>
+            <p>The instructor: <br> <br> Dani Krossing</p>
+            <img src="../img/java-inst.jpg"> <br>
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/ItYye9h_RXg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
       </div>
 
-      <div id="oracle" class="card">
-        <div id="oracle-img" class="card-img">
-          <button id="oracle-topics" class="topics-button">View the Topics > </button>
-        </div>
-        <p>Oracle DBA Beginner to Advance</p>
-        <ul class="key">
-          <li>Duration: </li>
-          <li>Difficulty: </li>
-          <li>Language: </li>
-          <li>Price: </li>
-        </ul>
-        <ul class="value" id="oracle-value">
-          <li>121 Lesson</li>
-          <li>intermediate</li>
-          <li>English</li>
-          <li>50$</li>
-        </ul>
-        <button id="oracle-button" class="buy-button">Buy Now</button>
-        <label for="oracle-fav" class="label-fav">Fav</label>
-        <input type="checkbox" id="oracle-fav" class="fav">
-        <button id="oracle-rate-button" class="rate-button">Rate</button>
-        <div id="oracle-rating-slider" class="rating-slider">
-          <input type="range" id="oracle-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
-          <output></output>
-        </div>
-        <a href="#"><button id="oracle-course" class="card-course">Course link</button></a> 
-      </div>
-      <div class="popUp" id="oracle-popUp">
-        <div class="popUp-content">
-          <span class="close" id="close-oracle">&times;</span>
-          <div class="popup-data">
-            <p>Topics:</p>
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
-              <li>6</li>
-            </ul> <br>
-            <p>The instructor: <br> ahmad ali</p>
-            <img src="../img/logo.png"> <br>
-            <iframe width="200" height="200" src="https://www.youtube.com/embed/6QAELgirvjs?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+
+      <!------------------------------PYTHON / BACK.END----------------------------------------->
+
 
       <div id="python" class="card">
         <div id="python-img" class="card-img">
@@ -255,28 +232,33 @@
           <input type="range" id="python-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
           <output></output>
         </div>
-        <a href="#"><button id="python-course" class="card-course">Course link</button></a> 
+        <a href="#"><button id="python-course" class="card-course">Course link</button></a>
       </div>
       <div class="popUp" id="python-popUp">
         <div class="popUp-content">
           <span class="close" id="close-python">&times;</span>
           <div class="popup-data">
             <p>Topics:</p>
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
-              <li>6</li>
-            </ul> <br>
-            <p>The instructor: <br> ahmad ali</p>
-            <img src="../img/logo.png"> <br>
-            <iframe width="200" height="200" src="https://www.youtube.com/embed/6QAELgirvjs?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <ol>
+              <li>Introduction to basics</li>
+              <li>Advanced concepts</li>
+              <li>Python Object and Data Structure Basics</li>
+              <li>Python Comparison Operators</li>
+              <li>Python Statements</li>
+              <li>Methods and Functions</li>
+            </ol> <br>
+            <p>The instructor: <br> <br> Mike Dane</p>
+            <img src="../img/python-inst.jpg"> <br>
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/rfscVS0vtbw"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
       </div>
 
+      <!------------------------------NODEJS / BACK.END----------------------------------------->
 
 
       <div id="Nodejs" class="card">
@@ -291,7 +273,7 @@
           <li>Price: </li>
         </ul>
         <ul class="value">
-          <li>44 Lesson</li>
+          <li>35 Lesson</li>
           <li>Beginner</li>
           <li>English</li>
           <li>40$</li>
@@ -300,35 +282,44 @@
         <label for="Nodejs-fav" class="label-fav">Fav</label>
         <input type="checkbox" id="Nodejs-fav" class="fav">
         <button id="Nodejs-rate-button" class="rate-button">Rate</button>
-        <div class="rating-slider">
+        <div id="nodejs-rating-slider" class="rating-slider">
           <input type="range" id="Nodejs-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
           <output></output>
         </div>
-        <a href="#"><button id="Nodejs-course" class="card-course">Course link</button></a> 
+        <a href="#"><button id="Nodejs-course" class="card-course">Course link</button></a>
       </div>
       <div class="popUp" id="Nodejs-popUp">
         <div class="popUp-content">
           <span class="close" id="close-Nodejs">&times;</span>
+          <div class="popup-data">
+
           <p>Topics:</p>
-          <ul>
-            <li>python</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-          </ul> <br>
-          <p>The instructor: <br> ahmad ali</p>
-          <img src="../img/logo.png">
+          <br>
+          <ol>
+            <li>Installing and Exploring Node.js</li>
+            <li>Node.js Module System </li>
+            <li>File System and Command Line Ards</li>
+            <li>Debugging Node.js</li>
+            <li>Asynchornous Node.js</li>
+            <li>Web servers</li>
+          </ol> <br>
+          <p>The instructor: <br> <br>Codevolution</p>
+          <img src="../img/nodesjs-inst.jpg">
+          <iframe width="400" height="300" src="https://www.youtube.com/embed/CTxrpmY1At8" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
       </div>
+    </div>
 
-      
-      <div id="Nodejs" class="card">
-        <div id="Nodejs-img" class="card-img">
-          <button id="Nodejs-topics" class="topics-button">View the Topics > </button>
+      <!------------------------------C++ / BACK.END----------------------------------------->
+
+      <div id="c++" class="card">
+        <div id="c-img" class="card-img">
+          <button id="c++-topics" class="topics-button">View the Topics > </button>
         </div>
-        <p>Nodejs for Beginners</p>
+        <p>C++ for Beginners</p>
         <ul class="key">
           <li>Duration: </li>
           <li>Difficulty: </li>
@@ -336,53 +327,212 @@
           <li>Price: </li>
         </ul>
         <ul class="value">
-          <li>44 Lesson</li>
+          <li>27 Lesson</li>
           <li>Beginner</li>
           <li>English</li>
           <li>40$</li>
         </ul>
-        <button id="Nodejs-button" class="buy-button">Buy Now</button>
-        <label for="Nodejs-fav" class="label-fav">Fav</label>
-        <input type="checkbox" id="Nodejs-fav" class="fav">
-        <button id="Nodejs-rate-button" class="rate-button">Rate</button>
-        <div class="rating-slider">
-          <input type="range" id="Nodejs-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+        <button id="c++-button" class="buy-button">Buy Now</button>
+        <label for="c++-fav" class="label-fav">Fav</label>
+        <input type="checkbox" id="c++-fav" class="fav">
+        <button id="c++-rate-button" class="rate-button">Rate</button>
+        <div id="c++-rating-slider" class="rating-slider">
+          <input type="range" id="c++-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
           <output></output>
         </div>
-        <a href="#"><button id="Nodejs-course" class="card-course">Course link</button></a> 
+        <a href="#"><button id="c++-course" class="card-course">Course link</button></a>
       </div>
-      <div class="popUp" id="Nodejs-popUp">
+      <div class="popUp" id="c++-popUp">
         <div class="popUp-content">
-          <span class="close" id="close-Nodejs">&times;</span>
+          <span class="close" id="close-c++">&times;</span>
+          <div class="popup-data">
+
           <p>Topics:</p>
-          <ul>
-            <li>python</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-          </ul> <br>
-          <p>The instructor: <br> ahmad ali</p>
-          <img src="../img/logo.png">
+          <br>
+          <ol>
+            <li>History of C++</li>
+            <li>C++ Usage </li>
+            <li>Features of C++</li>
+            <li>C++ Program Structure</li>
+            <li>C++ Object Oriented</li>
+            <li>C++ Inheritance</li>
+          </ol> <br>
+          <p>The instructor: <br> <br> The Cherno</p>
+          <img src="../img/c++-inst.jpg">
+          <iframe width="400" height="300" src="https://www.youtube.com/embed/18c3MTX0PK0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+      <!------------------------------ORACLE / DATABASE----------------------------------------->
+
+      <div id="oracle" class="card">
+        <div id="oracle-img" class="card-img">
+          <button id="oracle-topics" class="topics-button">View the Topics > </button>
+        </div>
+        <p>Oracle DBA Beginner to Advance</p>
+        <ul class="key">
+          <li>Duration: </li>
+          <li>Difficulty: </li>
+          <li>Language: </li>
+          <li>Price: </li>
+        </ul>
+        <ul class="value" id="oracle-value">
+          <li>50 Lesson</li>
+          <li>intermediate</li>
+          <li>English</li>
+          <li>50$</li>
+        </ul>
+        <button id="oracle-button" class="buy-button">Buy Now</button>
+        <label for="oracle-fav" class="label-fav">Fav</label>
+        <input type="checkbox" id="oracle-fav" class="fav">
+        <button id="oracle-rate-button" class="rate-button">Rate</button>
+        <div id="oracle-rating-slider" class="rating-slider">
+          <input type="range" id="oracle-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+          <output></output>
+        </div>
+        <a href="#"><button id="oracle-course" class="card-course">Course link</button></a>
+      </div>
+      <div class="popUp" id="oracle-popUp">
+        <div class="popUp-content">
+          <span class="close" id="close-oracle">&times;</span>
+          <div class="popup-data">
+            <p>Topics:</p>
+            <br>
+            <ol>
+              <li>Learn the fundamentals of database to set the stage for Oracle Architecture</li>
+              <li>Install Oracle Database 11g & 12c (Manual method and using DBCA)</li>
+              <li>UNDO Tablespace management to manage undo space.</li>
+              <li>REDO Log file management to manage redo space.</li>
+              <li>Manage users and security</li>
+              <li>Networking (Configuring Listeners and TNS entries)</li>
+            </ol> <br>
+            <p>The instructor: <br> <br> MrMerchant Co.</p>
+            <img src="../img/oracle-inst.jpg"> <br>
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/aZ2gjTe4vLo"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
         </div>
       </div>
 
+      <!------------------------------SQL / DATABASE----------------------------------------->
 
+      <div id="sql" class="card">
+        <div id="sql-img" class="card-img">
+          <button id="sql-topics" class="topics-button">View the Topics > </button>
+        </div>
+        <p>SQL Beginner to Advance in Arabic</p>
+        <ul class="key">
+          <li>Duration: </li>
+          <li>Difficulty: </li>
+          <li>Language: </li>
+          <li>Price: </li>
+        </ul>
+        <ul class="value" id="sql-value">
+          <li>20 Lesson</li>
+          <li>intermediate</li>
+          <li>Arabic</li>
+          <li>50$</li>
+        </ul>
+        <button id="sql-button" class="buy-button">Buy Now</button>
+        <label for="sql-fav" class="label-fav">Fav</label>
+        <input type="checkbox" id="sql-fav" class="fav">
+        <button id="sql-rate-button" class="rate-button">Rate</button>
+        <div id="sql-rating-slider" class="rating-slider">
+          <input type="range" id="sql-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+          <output></output>
+        </div>
+        <a href="#"><button id="sql-course" class="card-course">Course link</button></a>
+      </div>
+      <div class="popUp" id="sql-popUp">
+        <div class="popUp-content">
+          <span class="close" id="close-sql">&times;</span>
+          <div class="popup-data">
+            <p>Topics:</p>
+            <br>
+            <ol>
+              <li>Introduction to SQL</li>
+              <li>Retrieving Data</li>
+              <li>Updating Data</li>
+              <li>Inserting Data</li>
+              <li>Deleting Data</li>
+              <li>Sorting and Filtering Data</li>
+            </ol> <br>
+            <p>The instructor: <br> <br>TheNewBaghdad</p>
+            <img src="../img/sql-inst.jpg"> <br>
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/Apq8FuGNODM"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
 
+      <!------------------------------MONGO DB / DATABASE----------------------------------------->
 
+      <div id="mongodb" class="card">
+        <div id="mongodb-img" class="card-img">
+          <button id="mongodb-topics" class="topics-button">View the Topics > </button>
+        </div>
+        <p>MONGO DB Beginner to Advance</p>
+        <ul class="key">
+          <li>Duration: </li>
+          <li>Difficulty: </li>
+          <li>Language: </li>
+          <li>Price: </li>
+        </ul>
+        <ul class="value" id="mongodb-value">
+          <li>23 Lesson</li>
+          <li>intermediate</li>
+          <li>English</li>
+          <li>50$</li>
+        </ul>
+        <button id="mongodb-button" class="buy-button">Buy Now</button>
+        <label for="mongodb-fav" class="label-fav">Fav</label>
+        <input type="checkbox" id="mongodb-fav" class="fav">
+        <button id="mongodb-rate-button" class="rate-button">Rate</button>
+        <div id="mongodb-rating-slider" class="rating-slider">
+          <input type="range" id="mongodb-range" min="0" max="5" oninput="this.nextElementSibling.value = this.value">
+          <output></output>
+        </div>
+        <a href="#"><button id="mongodb-course" class="card-course">Course link</button></a>
+      </div>
+      <div class="popUp" id="mongodb-popUp">
+        <div class="popUp-content">
+          <span class="close" id="close-mongodb">&times;</span>
+          <div class="popup-data">
+            <p>Topics:</p>
+            <br>
+            <ol>
+              <li>how to install and use MongoDB locally and in the cloud </li>
+              <li>how to perform CRUD (Create, Read, Update, Delete) operations on MongoDB databases</li>
+              <li>how to filter for data efficiently</li>
+              <li>how to work with both the Mongo Shell and drivers (e.g. Node.js driver)</li>
+              <li>how to increase performance by using indexes (and how to use the right indexes!)</li>
+              <li>what replica sets and sharding are</li>
+            </ol> <br>
+            <p>The instructor: <br> <br> The Net Ninja</p>
+            <img src="../img/mongo-inst.jpg"> <br>
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/9OPP_1eAENg"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
 
+          </div>
+        </div>
+      </div>
 
+      <!------------------------------END OF THE CARDS----------------------------------------->
 
-
-
-
-
-     </div>
+    </div>
   </main>
- 
   <footer>
-    <hr> 
+    <hr>
     <section id="container">
       <p>Copy Rights &copy; CourseCom</p>
       <nav>
@@ -402,4 +552,5 @@
   </footer>
   <script src="../js/courses.js"></script>
 </body>
+
 </html>
