@@ -111,9 +111,8 @@ function Cards(name, src) {
   this.src = src;
   this.buy= false;
   this.fav = false;
-  this.rate=0;
+  this.rate = 0;
   Cards.allCourses.push(this);
-  saveTols();
 }//End constructor
 
 Cards.allCourses = [];
@@ -214,16 +213,18 @@ for(let i=0; i < Cards.allCourses.length;i++ ){
   });
 }
 
-/////////////// Git local storage///////////////
+/////////////// Get local storage///////////////
 function getLs()
 {
-  let data=localStorage.getItem('courses');
+  let data = localStorage.getItem('courses');
   console.log('gitelmentttt'+data);
-  let item=JSON.parse(data);
+  let item = JSON.parse(data);
   console.log('item '+ item);
-Cards.
+
 }
 getLs();
+
+
 
 
 
