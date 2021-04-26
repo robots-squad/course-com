@@ -1,0 +1,15 @@
+.container {
+    height: 50%;
+    border: 10px solid red;
+}
+
+#purchases {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#favourites {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
