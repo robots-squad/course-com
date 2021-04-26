@@ -207,17 +207,24 @@ Fav('cplus-fav', cplus);
 
 
 // rate:
-
+let count = 0;
 function Rate(rateButtonId, sliderId, object, rangeId,indx) {
   getLs();
   let Rate = document.getElementById(rateButtonId);
   let Slider = document.getElementById(sliderId);
+
   Rate.addEventListener('click', function () {
+
+    count++;
+    console.log(count);
     let Range = document.getElementById(rangeId);
     object.rate = parseInt(Range.value);
-    Cards.allCourses[indx].allRrte +=object.rate  ;
+    Cards.allCourses[indx].allRrte += object.rate;
+
+    
 
     saveTols();
+    console.log(object.allRrte);
     alert('Thanks for rating');
     this.style.pointerEvents = 'none';
     this.style.opacity = '0.3';
@@ -240,35 +247,18 @@ Rate('nodejs-rate-button', 'nodejs-rating-slider', nodejs, 'nodejs-range',7);
 Rate('cplus-rate-button', 'cplus-rating-slider', cplus, 'cplus-range',8);
 
 
-///////////////////////////////////////////////Local Storage//////////////////////////////
+///////////////////////////////////////Local Storage//////////////////////////////
+
 function saveTols() {
-  console.log(Cards.allCourses[0].allRrte);
   localStorage.setItem('courses', JSON.stringify(Cards.allCourses));
 }
 
-
-// let card = null;
-
-// for (let i = 0; i < Cards.allCourses.length; i++) {
-
-//   card = document.getElementsByClassName('card')[i];
-
-//   card.addEventListener('click', function () {
-//     saveTols();
-//   });
-// }
-
-
 /////////////// Get local storage///////////////
 
-
 function getLs() {
-
   let data = JSON.parse(localStorage.getItem('courses'));
   if (data) {
     Cards.allCourses = data;
   }
-
-
 }
 
