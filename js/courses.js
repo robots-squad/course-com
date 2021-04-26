@@ -258,6 +258,7 @@ function saveTols() {
 //   });
 // }
 
+
 /////////////// Get local storage///////////////
 
 
@@ -270,3 +271,4 @@ function getLs() {
 
 
 }
+
