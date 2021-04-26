@@ -275,6 +275,38 @@ Fav('cplus-fav', cplus);
 
 // rate:
 
+// function Rate(rateButtonId, sliderId, Object) {
+
+//     let Rate = document.getElementById(rateButtonId);
+//     let Slider = document.getElementById(sliderId);
+
+//     Rate.addEventListener('click', function() {
+
+//         let Range = document.getElementById('html-range');
+//         Object.rate += parseInt(Range.value);
+//         alert('Thanks for rating');
+//         this.style.pointerEvents = 'none';
+//         this.style.opacity = '0.3';
+//         Slider.style.pointerEvents = 'none';
+//         Slider.style.opacity = '0.3';
+//     });
+
+// }
+
+function rateShowPopup(Id, closeId) {
+
+    let ratePopup = document.getElementById(Id);
+    ratePopup.style.display = 'block';
+
+    let close = document.getElementById(closeId);
+    close.onclick = function() {
+        ratePopup.style.display = 'none';
+
+    };
+
+}
+
+
 function Rate(rateButtonId, sliderId, Object) {
 
     let Rate = document.getElementById(rateButtonId);
@@ -284,7 +316,9 @@ function Rate(rateButtonId, sliderId, Object) {
 
         let Range = document.getElementById('html-range');
         Object.rate += parseInt(Range.value);
-        alert('Thanks for rating');
+        // alert('Thanks for rating');
+        rateShowPopup('rate-popUp', 'close-rate');
+
         this.style.pointerEvents = 'none';
         this.style.opacity = '0.3';
         Slider.style.pointerEvents = 'none';

@@ -424,6 +424,39 @@ iframe {
 }
 
 #confirm-note {
-    padding-left: 410px;
+    padding-left: 420px;
     padding-bottom: 20px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.confirm-buy img {
+    margin-left: 279px;
+    padding-top: 10px;
+}
+
+.rate-p {
+    color: #3e2fa3;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#first-line-rate {
+    padding-left: 390px;
+    margin-bottom: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#second-line-rate {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 367px;
+    margin-bottom: 20px;
+}
+
+#stars {
+    margin-left: 405px;
+    padding-top: 10px;
 }
