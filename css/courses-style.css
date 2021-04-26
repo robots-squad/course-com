@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url(../img/background.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -315,7 +315,6 @@ main {
     /* Black w/ opacity*/
 }
 
-
 .popUp-content {
     background-color: #fefefe;
     margin: auto;
@@ -381,4 +380,83 @@ iframe {
     font-weight: normal;
     margin-bottom: 15px;
     font-size: 14px;
+}
+
+
+/************************** buy pop up **********************/
+
+#buy-popUp {
+    display: none;
+}
+
+#buy-confirm {
+    color: #3e2fa3;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 318px;
+}
+
+.btn-buypop {
+    background: #4730d5;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 #8476da;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#true {
+    margin-left: 450px;
+    width: 50px;
+}
+
+#false {
+    width: 50px;
+}
+
+.confirm-buy {
+    color: #3e2fa3;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 190px;
+}
+
+#confirm-note {
+    padding-left: 420px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.confirm-buy img {
+    margin-left: 279px;
+    padding-top: 10px;
+}
+
+.rate-p {
+    color: #3e2fa3;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#first-line-rate {
+    padding-left: 390px;
+    margin-bottom: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#second-line-rate {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 367px;
+    margin-bottom: 20px;
+}
+
+#stars {
+    margin-left: 405px;
+    padding-top: 10px;
 }
