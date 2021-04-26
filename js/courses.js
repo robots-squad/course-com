@@ -149,7 +149,7 @@ let mongodb = new Cards('mongodb', '../img/mongodb.jpg');
 
 
 // buy pop up function:
-
+// nadeen and maram
 function showPopUp(Id, closeId) {
 
     let buyPopup = document.getElementById(Id);
@@ -200,7 +200,7 @@ function hide() {
 //     });
 // }
 
-
+// nadeen and maram
 
 function BuyCourse(buttonId, linkId, object) {
 
@@ -292,7 +292,7 @@ Fav('cplus-fav', cplus);
 //     });
 
 // }
-
+// nadeen and maram
 function rateShowPopup(Id, closeId) {
 
     let ratePopup = document.getElementById(Id);
