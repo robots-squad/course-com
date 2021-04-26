@@ -1,5 +1,7 @@
 /****************************** pop up logic ************************************************* */
 
+getLs();
+
 function Popup(content, card, close) {
 
   // Get the modal
@@ -31,18 +33,18 @@ function Popup(content, card, close) {
 
 
 
-Popup("html-popUp","html-topics","close-html");
-Popup("css-popUp","css-topics","close-css");
-Popup("js-popUp","js-topics","close-js");
+Popup("html-popUp", "html-topics", "close-html");
+Popup("css-popUp", "css-topics", "close-css");
+Popup("js-popUp", "js-topics", "close-js");
 
-Popup("python-popUp","python-topics","close-python");
-Popup("nodejs-popUp","nodejs-topics","close-nodejs");
-Popup("cplus-popUp","cplus-topics","close-cplus");
+Popup("python-popUp", "python-topics", "close-python");
+Popup("nodejs-popUp", "nodejs-topics", "close-nodejs");
+Popup("cplus-popUp", "cplus-topics", "close-cplus");
 
 
-Popup("oracle-popUp","oracle-topics","close-oracle");
-Popup("sql-popUp","sql-topics","close-sql");
-Popup("mongodb-popUp","mongodb-topics","close-mongodb");
+Popup("oracle-popUp", "oracle-topics", "close-oracle");
+Popup("sql-popUp", "sql-topics", "close-sql");
+Popup("mongodb-popUp", "mongodb-topics", "close-mongodb");
 
 
 /************************ show and hide cards ************************************/
@@ -69,10 +71,10 @@ let sqlCard = document.getElementById('sql');
 let mongodbCard = document.getElementById('mongodb');
 
 
-let AllArr = [HTMLcard,CSScard,JScard,PyhtonCard,NodejsCard,CCard,OracleCard,sqlCard,mongodbCard];
-let frontArr = [HTMLcard,CSScard,JScard];
-let backArr = [PyhtonCard,NodejsCard,CCard];
-let dataBaseArr = [OracleCard,sqlCard,mongodbCard];
+let AllArr = [HTMLcard, CSScard, JScard, PyhtonCard, NodejsCard, CCard, OracleCard, sqlCard, mongodbCard];
+let frontArr = [HTMLcard, CSScard, JScard];
+let backArr = [PyhtonCard, NodejsCard, CCard];
+let dataBaseArr = [OracleCard, sqlCard, mongodbCard];
 
 
 // event listners:
@@ -126,29 +128,29 @@ DataBaseButton.addEventListener('click', function () {
 function Cards(name, src) {
   this.name = name;
   this.src = src;
-  this.buy= false;
+  this.buy = false;
   this.fav = false;
   this.rate = 0;
   Cards.allCourses.push(this);
-}//End constructor
+} //End constructor
 
 Cards.allCourses = [];
 
-let html = new Cards('html','../img/HTML.png');
-let css = new Cards('css','../img/CSS.png');
-let js = new Cards('js','../img/JS.png');
-let python = new Cards('python','../img/python.png');
+let html = new Cards('html', '../img/HTML.png');
+let css = new Cards('css', '../img/CSS.png');
+let js = new Cards('js', '../img/JS.png');
+let python = new Cards('python', '../img/python.png');
 let nodejs = new Cards('nodejs', '../img/Nodejs.png');
 let cplus = new Cards('cplus', '../img/cplus.jpg');
-let oracle = new Cards('oracle','../img/oracle.png');
+let oracle = new Cards('oracle', '../img/oracle.png');
 let sql = new Cards('sql', '../img/sql.png');
-let mongodb = new Cards('mongodb','../img/mongodb.jpg');
+let mongodb = new Cards('mongodb', '../img/mongodb.jpg');
 
 /*********************************  Card Functions *************************************/
 
 // Buy:
 
-function BuyCourse(buttonId, linkId, object){
+function BuyCourse(buttonId, linkId, object) {
 
   let BuyBtn = document.getElementById(buttonId);
   let Link = document.getElementById(linkId);
@@ -165,49 +167,50 @@ function BuyCourse(buttonId, linkId, object){
   });
 }
 
-BuyCourse('html-button','html-course',html);
-BuyCourse('css-button','css-course',css);
-BuyCourse('js-button','js-course',js);
-BuyCourse('python-button','python-course',python);
-BuyCourse('nodejs-button','nodejs-course',nodejs);
-BuyCourse('cplus-button','cplus-course',cplus);
-BuyCourse('oracle-button','oracle-course',oracle);
-BuyCourse('sql-button','sql-course',sql);
-BuyCourse('mongodb-button','mongodb-course',mongodb);
+BuyCourse('html-button', 'html-course', html);
+BuyCourse('css-button', 'css-course', css);
+BuyCourse('js-button', 'js-course', js);
+BuyCourse('python-button', 'python-course', python);
+BuyCourse('nodejs-button', 'nodejs-course', nodejs);
+BuyCourse('cplus-button', 'cplus-course', cplus);
+BuyCourse('oracle-button', 'oracle-course', oracle);
+BuyCourse('sql-button', 'sql-course', sql);
+BuyCourse('mongodb-button', 'mongodb-course', mongodb);
 
 
 // fav:
-function Fav(favId, Object){
+function Fav(favId, Object) {
 
   let Fav = document.getElementById(favId);
 
   Fav.addEventListener('click', function (e) {
 
     Object.fav = e.target.checked;
+    
   });
 }
 
-Fav('html-fav',html);
-Fav('css-fav',css);
-Fav('js-fav',js);
-Fav('oracle-fav',oracle);
-Fav('sql-fav',sql);
-Fav('mongodb-fav',mongodb);
-Fav('python-fav',python);
-Fav('nodejs-fav',nodejs);
-Fav('cplus-fav',cplus);
+Fav('html-fav', html);
+Fav('css-fav', css);
+Fav('js-fav', js);
+Fav('oracle-fav', oracle);
+Fav('sql-fav', sql);
+Fav('mongodb-fav', mongodb);
+Fav('python-fav', python);
+Fav('nodejs-fav', nodejs);
+Fav('cplus-fav', cplus);
 
 
 // rate:
 
-function Rate(rateButtonId, sliderId, Object){
+function Rate(rateButtonId, sliderId, Object,rangeId) {
 
   let Rate = document.getElementById(rateButtonId);
   let Slider = document.getElementById(sliderId);
 
-  Rate.addEventListener('click', function(){
+  Rate.addEventListener('click', function () {
 
-    let Range = document.getElementById('html-range');
+    let Range = document.getElementById(rangeId);
     Object.rate += parseInt(Range.value);
     alert('Thanks for rating');
     this.style.pointerEvents = 'none';
@@ -218,48 +221,51 @@ function Rate(rateButtonId, sliderId, Object){
 
 }
 
-Rate('html-rate-button','html-rating-slider',html);
-Rate('css-rate-button','css-rating-slider',css);
-Rate('js-rate-button','js-rating-slider',js);
-Rate('oracle-rate-button','oracle-rating-slider',oracle);
-Rate('sql-rate-button','sql-rating-slider',sql);
-Rate('mongodb-rate-button','mongodb-rating-slider',mongodb);
-Rate('python-rate-button','python-rating-slider',python);
-Rate('nodejs-rate-button','nodejs-rating-slider',nodejs);
-Rate('cplus-rate-button','cplus-rating-slider',cplus);
+Rate('html-rate-button', 'html-rating-slider', html,'html-range');
+Rate('css-rate-button', 'css-rating-slider', css,'css-range');
+Rate('js-rate-button', 'js-rating-slider', js,'js-range');
+Rate('oracle-rate-button', 'oracle-rating-slider', oracle,'oracle-range');
+Rate('sql-rate-button', 'sql-rating-slider', sql,'sql-range');
+Rate('mongodb-rate-button', 'mongodb-rating-slider', mongodb,'mongodb-range');
+Rate('python-rate-button', 'python-rating-slider', python,'python-range');
+Rate('nodejs-rate-button', 'nodejs-rating-slider', nodejs,'nodejs-range');
+Rate('cplus-rate-button', 'cplus-rating-slider', cplus,'cplus-range');
 
 
 ///////////////////////////////////////////////Local Storage//////////////////////////////
-function saveTols()
-{
-  let arrstr=JSON.stringify(Cards.allCourses);
-  localStorage.setItem('courses',arrstr);
+function saveTols() {
+  localStorage.setItem('courses', JSON.stringify(Cards.allCourses));
 }
 
 let card = null;
-for(let i=0; i < Cards.allCourses.length;i++ ){
+
+for (let i = 0; i < Cards.allCourses.length; i++) {
 
   card = document.getElementsByClassName('card')[i];
 
-  card.addEventListener('click',function(){
+  card.addEventListener('click', function () {
     saveTols();
+
+
   });
 }
 
 /////////////// Get local storage///////////////
-function getLs()
-{
-  let data = localStorage.getItem('courses');
-  console.log('gitelmentttt'+data);
-  let item = JSON.parse(data);
-  console.log('item '+ item);
+
+console.log(Cards.allCourses);
+
+function getLs() {
+
+  let data = JSON.parse(localStorage.getItem('courses'));
+  if (data) {
+    Cards.allCourses = data;
+    console.log(Cards.allCourses);
+  }
+  // Cards.allCourses = [];
+  // for(let i = 0 ; i<data.length ;i++){
+  //       console.log(data[i]);
+  // }
 
 }
-getLs();
 
-
-
-
-
-
-
+    
