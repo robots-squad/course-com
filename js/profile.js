@@ -37,6 +37,5 @@ function renderCourses(){
         nameCourse.textContent = "You haven't choose any favourite courses";
      }
     
-    }
-    
+    }   
 }
