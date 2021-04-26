@@ -245,11 +245,11 @@ for (let i = 0; i < Cards.allCourses.length; i++) {
 function getLs() {
 
   let data = JSON.parse(localStorage.getItem('courses'));
-  console.log(data[0]);
+  console.log(data);
   if (data !== null) {
     Cards.allCourses=data;
     console.log('item ' +   Cards.allCourses);
-  }
+ }
 
 }
 

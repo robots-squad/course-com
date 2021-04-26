@@ -10,11 +10,11 @@
     font-size: 30px;
     font-weight: bold;
     color:#4730d5;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     background-color: rgba(202, 198, 198, 0.192);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     height: 400px;
-    overflow: auto;
+    overflow-x: scroll;
     padding: 14px 10px;
     border-radius: 20px;
     
@@ -28,16 +28,16 @@
     background-color: rgba(202, 198, 198, 0.192);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     height: 400px;
-    overflow: auto;
+    overflow-x: scroll;
     padding: 14px 10px;
     border-radius: 20px;   
 }
 
-h2 {
+.container h2 {
    text-align: center;
    margin-top: 150px;
    font-size: 20px;
-   color:rgba(7, 2, 2, 0.61)
+   color:rgba(7, 2, 2, 0.61);
   
 }
 
@@ -47,15 +47,6 @@ h3 {
 
 }
 
-
-#purchases img {
-    border: 3px solid grey;
-}
-
-
-.dImg {
-    display: inline-block;
-    margin-left: 10px;
-    height: 50px;
-
+.container img{
+    margin-right: 30px;
 }
