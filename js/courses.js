@@ -31,18 +31,18 @@ function Popup(content, card, close) {
 
 
 
-Popup("html-popUp","html-topics","close-html");
-Popup("css-popUp","css-topics","close-css");
-Popup("js-popUp","js-topics","close-js");
+Popup("html-popUp", "html-topics", "close-html");
+Popup("css-popUp", "css-topics", "close-css");
+Popup("js-popUp", "js-topics", "close-js");
 
-Popup("python-popUp","python-topics","close-python");
-Popup("nodejs-popUp","nodejs-topics","close-nodejs");
-Popup("c++-popUp","c++-topics","close-c++");
+Popup("python-popUp", "python-topics", "close-python");
+Popup("nodejs-popUp", "nodejs-topics", "close-nodejs");
+Popup("c++-popUp", "c++-topics", "close-c++");
 
 
-Popup("oracle-popUp","oracle-topics","close-oracle");
-Popup("sql-popUp","sql-topics","close-sql");
-Popup("mongodb-popUp","mongodb-topics","close-mongodb");
+Popup("oracle-popUp", "oracle-topics", "close-oracle");
+Popup("sql-popUp", "sql-topics", "close-sql");
+Popup("mongodb-popUp", "mongodb-topics", "close-mongodb");
 
 
 /************************ show and hide cards ************************************/
@@ -69,10 +69,10 @@ let sqlCard = document.getElementById('sql');
 let mongodbCard = document.getElementById('mongodb');
 
 
-let AllArr = [HTMLcard,CSScard,JScard,PyhtonCard,NodejsCard,CCard,OracleCard,sqlCard,mongodbCard];
-let frontArr = [HTMLcard,CSScard,JScard];
-let backArr = [PyhtonCard,NodejsCard,CCard];
-let dataBaseArr = [OracleCard,sqlCard,mongodbCard];
+let AllArr = [HTMLcard, CSScard, JScard, PyhtonCard, NodejsCard, CCard, OracleCard, sqlCard, mongodbCard];
+let frontArr = [HTMLcard, CSScard, JScard];
+let backArr = [PyhtonCard, NodejsCard, CCard];
+let dataBaseArr = [OracleCard, sqlCard, mongodbCard];
 
 
 // event listners:
@@ -126,25 +126,25 @@ DataBaseButton.addEventListener('click', function () {
 function Cards(name, src) {
   this.name = name;
   this.src = src;
-  this.buy= false;
+  this.buy = false;
   this.fav = false;
   this.rate = 0;
   Cards.allCourses.push(this);
-}//End constructor
+} //End constructor
 
 Cards.allCourses = [];
 
-let html = new Cards('html','../img/HTML.png');
-let css = new Cards('css','../img/CSS.png');
-let js = new Cards('js','../img/JS.png');
-let oracle = new Cards('oracle','../img/oracle.png');
-let python = new Cards('python','../img/python.png');
+let html = new Cards('html', '../img/HTML.png');
+let css = new Cards('css', '../img/CSS.png');
+let js = new Cards('js', '../img/JS.png');
+let oracle = new Cards('oracle', '../img/oracle.png');
+let python = new Cards('python', '../img/python.png');
 
 /*********************************  Card Functions *************************************/
 
 // Buy:
 
-function BuyCourse(buttonId, linkId, object){
+function BuyCourse(buttonId, linkId, object) {
 
   let BuyBtn = document.getElementById(buttonId);
   let Link = document.getElementById(linkId);
@@ -161,15 +161,15 @@ function BuyCourse(buttonId, linkId, object){
   });
 }
 
-BuyCourse('html-button','html-course',html);
-BuyCourse('css-button','css-course',css);
-BuyCourse('js-button','js-course',js);
-BuyCourse('oracle-button','oracle-course',oracle);
-BuyCourse('python-button','python-course',python);
+BuyCourse('html-button', 'html-course', html);
+BuyCourse('css-button', 'css-course', css);
+BuyCourse('js-button', 'js-course', js);
+BuyCourse('oracle-button', 'oracle-course', oracle);
+BuyCourse('python-button', 'python-course', python);
 
 
 // fav:
-function Fav(favId, Object){
+function Fav(favId, Object) {
 
   let Fav = document.getElementById(favId);
 
@@ -179,21 +179,21 @@ function Fav(favId, Object){
   });
 }
 
-Fav('html-fav',html);
-Fav('css-fav',css);
-Fav('js-fav',js);
-Fav('oracle-fav',oracle);
-Fav('python-fav',python);
+Fav('html-fav', html);
+Fav('css-fav', css);
+Fav('js-fav', js);
+Fav('oracle-fav', oracle);
+Fav('python-fav', python);
 
 
 // rate:
 
-function Rate(rateButtonId, sliderId, Object){
+function Rate(rateButtonId, sliderId, Object) {
 
   let Rate = document.getElementById(rateButtonId);
   let Slider = document.getElementById(sliderId);
 
-  Rate.addEventListener('click', function(){
+  Rate.addEventListener('click', function () {
 
     let Range = document.getElementById('html-range');
     Object.rate += parseInt(Range.value);
@@ -206,44 +206,36 @@ function Rate(rateButtonId, sliderId, Object){
 
 }
 
-Rate('html-rate-button','html-rating-slider',html);
-Rate('css-rate-button','css-rating-slider',css);
-Rate('js-rate-button','js-rating-slider',js);
-Rate('oracle-rate-button','oracle-rating-slider',oracle);
-Rate('python-rate-button','python-rating-slider',python);
+Rate('html-rate-button', 'html-rating-slider', html);
+Rate('css-rate-button', 'css-rating-slider', css);
+Rate('js-rate-button', 'js-rating-slider', js);
+Rate('oracle-rate-button', 'oracle-rating-slider', oracle);
+Rate('python-rate-button', 'python-rating-slider', python);
 
 
 ///////////////////////////////////////////////Local Storage//////////////////////////////
-function saveTols()
-{
-  let arrstr=JSON.stringify(Cards.allCourses);
-  localStorage.setItem('courses',arrstr);
+function saveTols() {
+  localStorage.setItem('courses',JSON.stringify(Cards.allCourses));
 }
 
 let card = null;
-for(let i=0; i < Cards.allCourses.length;i++ ){
 
+for (let i = 0; i < Cards.allCourses.length; i++) {
   card = document.getElementsByClassName('card')[i];
-
-  card.addEventListener('click',function(){
-    saveTols();
-  });
+  card.addEventListener('click', function () { saveTols();  });
 }
-
 /////////////// Get local storage///////////////
-function getLs()
-{
-  let data = localStorage.getItem('courses');
-  console.log('gitelmentttt'+data);
-  let item = JSON.parse(data);
-  console.log('item '+ item);
+
+function getLs() {
+
+  let data = JSON.parse(localStorage.getItem('courses'));
+  console.log(data[0]);
+  if (data !== null) {
+    Cards.allCourses=data;
+    console.log('item ' +   Cards.allCourses);
+  }
 
 }
+
+
 getLs();
-
-
-
-
-
-
-
