@@ -10,7 +10,7 @@ button {
 
 main {
     display: block;
-    height: 800px;
+    height: 1300px;
     margin-top: 200px;
 }
 
@@ -460,3 +460,13 @@ iframe {
     margin-left: 405px;
     padding-top: 10px;
 }
+
+/****************** chart ****************/
+
+canvas{
+    margin: 100px auto;
+    width:60% !important; /* !important override the canvas style width*/
+    height:20% !important;
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }

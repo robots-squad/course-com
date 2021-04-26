@@ -140,12 +140,12 @@ Cards.allCourses = [];
 let html = new Cards('html', '../img/HTML.png');
 let css = new Cards('css', '../img/CSS.png');
 let js = new Cards('js', '../img/JS.png');
-let python = new Cards('python', '../img/python.png');
-let nodejs = new Cards('nodejs', '../img/Nodejs.png');
-let cplus = new Cards('cplus', '../img/cplus.jpg');
 let oracle = new Cards('oracle', '../img/oracle.png');
 let sql = new Cards('sql', '../img/sql.png');
 let mongodb = new Cards('mongodb', '../img/mongodb.jpg');
+let python = new Cards('python', '../img/python.png');
+let nodejs = new Cards('nodejs', '../img/Nodejs.png');
+let cplus = new Cards('cplus', '../img/cplus.jpg');
 
 /*********************************  Card Functions *************************************/
 
@@ -215,12 +215,12 @@ function BuyCourse(buttonId, linkId, object) {
 BuyCourse('html-button', 'html-course', html);
 BuyCourse('css-button', 'css-course', css);
 BuyCourse('js-button', 'js-course', js);
-BuyCourse('python-button', 'python-course', python);
-BuyCourse('nodejs-button', 'nodejs-course', nodejs);
-BuyCourse('cplus-button', 'cplus-course', cplus);
 BuyCourse('oracle-button', 'oracle-course', oracle);
 BuyCourse('sql-button', 'sql-course', sql);
 BuyCourse('mongodb-button', 'mongodb-course', mongodb);
+BuyCourse('python-button', 'python-course', python);
+BuyCourse('nodejs-button', 'nodejs-course', nodejs);
+BuyCourse('cplus-button', 'cplus-course', cplus);
 
 // fav:
 function Fav(favId, object) {
@@ -244,7 +244,6 @@ Fav('python-fav', python);
 Fav('nodejs-fav', nodejs);
 Fav('cplus-fav', cplus);
 
-
 // rate:
 
 function rateShowPopup(Id, closeId) {
@@ -263,6 +262,7 @@ function rateShowPopup(Id, closeId) {
 
 function Rate(rateButtonId, sliderId, object, rangeId, indx) {
   getLsRate();
+  
   let Rate = document.getElementById(rateButtonId);
   let Slider = document.getElementById(sliderId);
 
@@ -277,7 +277,7 @@ function Rate(rateButtonId, sliderId, object, rangeId, indx) {
     Cards.allCourses[indx].allRrte += object.rate;
     
     saveTols();
-   
+    
     this.style.pointerEvents = 'none';
     this.style.opacity = '0.3';
     Slider.style.pointerEvents = 'none';
@@ -301,6 +301,7 @@ Rate('cplus-rate-button', 'cplus-rating-slider', cplus, 'cplus-range', 8);
 
 function saveTols() {
   localStorage.setItem('courses', JSON.stringify(Cards.allCourses));
+  
 }
 
 
@@ -331,3 +332,51 @@ function getLsRate() {
   }
 }
 
+/***************************** chart *****************************************/
+
+// get courses names and avg rating:
+
+let namesArr = [];
+let rateArr = [];
+let avg=0;
+
+for(let i=0; i< Cards.allCourses.length; i++){
+  namesArr.push(Cards.allCourses[i].name);
+
+  if(Cards.allCourses[i].allRrte != 0){  // to prevent dividing on 0
+    avg = Cards.allCourses[i].allRrte / Cards.allCourses[i].count;
+  }else{
+    avg=0;
+  }
+  rateArr.push(avg);
+}
+console.log(namesArr);
+console.log(rateArr)
+// chart:
+
+function chart(){ 
+  let ctx = document.getElementById('myChart').getContext('2d');
+  let myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+          labels: namesArr,
+          datasets: [{
+              label: 'Rating',
+              data: rateArr,
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.5)',
+                  'rgba(54, 162, 235, 0.5)',
+                  'rgba(255, 206, 86, 0.5)',
+                  'rgba(75, 192, 192, 0.5)',
+                  'rgba(153, 102, 255, 0.5)',
+                  'rgba(255, 159, 64, 0.5)',
+                  'rgba(255, 100, 200, 0.5)',
+                  'rgba(100, 159, 50, 0.5)',
+                  'rgba(53, 30, 250, 0.5)'
+              ],
+              borderWidth: 1
+          }]
+      }
+    })
+}
+chart();
