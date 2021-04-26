@@ -227,7 +227,7 @@ function Rate(rateButtonId, sliderId, object, rangeId,indx) {
   });
 
 }
-// 
+
 
 Rate('html-rate-button', 'html-rating-slider', html, 'html-range',0);
 Rate('css-rate-button', 'css-rating-slider', css, 'css-range',1);
