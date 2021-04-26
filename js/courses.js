@@ -305,14 +305,6 @@ function saveTols() {
 }
 
 
-// for (let i=0; i < Cards.allCourses.length; i++){
-//   let card = document.getElementsByClassName('card')[i];
-//   card.addEventListener('click',function(){
-
-//     saveTols(); 
-//   })
-// }
-
 ///////////////////////////// Get local storage ///////////////////////////////
 
 function getLs() {
@@ -329,6 +321,7 @@ function getLsRate() {
       Cards.allCourses[i].allRrte = data[i].allRrte;
       Cards.allCourses[i].count = data[i].count;
     }
+    
   }
 }
 
@@ -350,11 +343,11 @@ for(let i=0; i< Cards.allCourses.length; i++){
   }
   rateArr.push(avg);
 }
-console.log(namesArr);
-console.log(rateArr)
-// chart:
 
+// chart:
 function chart(){ 
+
+
   let ctx = document.getElementById('myChart').getContext('2d');
   let myChart = new Chart(ctx, {
       type: 'bar',
@@ -374,9 +367,10 @@ function chart(){
                   'rgba(100, 159, 50, 0.5)',
                   'rgba(53, 30, 250, 0.5)'
               ],
-              borderWidth: 1
+              borderWidth: 2
           }]
       }
     })
 }
+
 chart();
