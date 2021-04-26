@@ -1,5 +1,5 @@
 /****************************** pop up logic ***********************************************/
-
+getLs();
 
 function Popup(content, card, close) {
 
@@ -180,7 +180,7 @@ function hide() {
 
 // Buy:
 function BuyCourse(buttonId, linkId, object) {
-
+  
   let BuyBtn = document.getElementById(buttonId);
   let Link = document.getElementById(linkId);
 
@@ -228,7 +228,7 @@ function Fav(favId, object) {
   let Fav = document.getElementById(favId);
 
   Fav.addEventListener('click', function (e) {
-
+    x= true;
     object.fav = e.target.checked;
     saveTols();
   });
@@ -260,13 +260,14 @@ function rateShowPopup(Id, closeId) {
 
 }
 
+
 function Rate(rateButtonId, sliderId, object, rangeId, indx) {
-  
-  getLs();
+  getLsRate();
   let Rate = document.getElementById(rateButtonId);
   let Slider = document.getElementById(sliderId);
 
   Rate.addEventListener('click', function () {
+    
     let Range = document.getElementById(rangeId);
 
     rateShowPopup('rate-popUp', 'close-rate');
@@ -274,13 +275,15 @@ function Rate(rateButtonId, sliderId, object, rangeId, indx) {
     object.rate = parseInt(Range.value);
     Cards.allCourses[indx].count++;
     Cards.allCourses[indx].allRrte += object.rate;
-
+    
     saveTols();
+   
     this.style.pointerEvents = 'none';
     this.style.opacity = '0.3';
     Slider.style.pointerEvents = 'none';
     Slider.style.opacity = '0.3';
   });
+
 }
 
 Rate('html-rate-button', 'html-rating-slider', html, 'html-range', 0);
@@ -300,11 +303,12 @@ function saveTols() {
   localStorage.setItem('courses', JSON.stringify(Cards.allCourses));
 }
 
+
 // for (let i=0; i < Cards.allCourses.length; i++){
 //   let card = document.getElementsByClassName('card')[i];
 //   card.addEventListener('click',function(){
 
-//     saveTols();
+//     saveTols(); 
 //   })
 // }
 
@@ -312,7 +316,18 @@ function saveTols() {
 
 function getLs() {
   let data = JSON.parse(localStorage.getItem('courses'));
-  if (data) {
+  if (data !=null) {
     Cards.allCourses = data;
   }
 }
+
+function getLsRate() {
+  let data = JSON.parse(localStorage.getItem('courses'));
+  if (data !=null) {
+    for(let i=0;i<data.length;i++){
+      Cards.allCourses[i].allRrte = data[i].allRrte;
+      Cards.allCourses[i].count = data[i].count;
+    }
+  }
+}
+
