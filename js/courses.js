@@ -215,10 +215,10 @@ function BuyCourse(buttonId, linkId, object) {
         // alert('Thanks for Buying');
         showPopUp('buy-popUp', 'close-buy');
 
-        let ok = document.getElementById('true');
-        let no = document.getElementById('false');
+        let yesbtn = document.getElementById('true');
+        let nobtn = document.getElementById('false');
 
-        ok.addEventListener('click', function() {
+        yesbtn.addEventListener('click', function() {
 
             confirmPopUp('confirmbuy-popUp', 'close-confirmbuy');
 
@@ -229,7 +229,7 @@ function BuyCourse(buttonId, linkId, object) {
             Link.style.display = 'block';
         });
 
-        no.addEventListener('click', function() {
+        nobtn.addEventListener('click', function() {
             Link.style.display = 'none';
             hide();
 
