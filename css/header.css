@@ -54,6 +54,7 @@ header a{
   font-size: 18px;
 }
 
+
 header li{
   display: inline;
   padding: 0px 30px;
@@ -82,4 +83,16 @@ header li{
 #head-buttons button:active {
   box-shadow: 0 2px 0 #8476da;
   transform: translateY(3px);
+}
+
+header a:hover{
+  color: rgb(49, 207, 255)
+}
+
+.color{
+  color: rgb(49, 207, 255);
+}
+
+.color:hover{
+  color: #4730d5;
 }

@@ -142,10 +142,10 @@ let css = new Cards('css', '../img/CSS.png');
 let js = new Cards('js', '../img/JS.png');
 let oracle = new Cards('oracle', '../img/oracle.png');
 let sql = new Cards('sql', '../img/sql.png');
-let mongodb = new Cards('mongodb', '../img/mongodb.jpg');
+let mongodb = new Cards('mongodb', '../img/mongodb.png');
 let python = new Cards('python', '../img/python.png');
 let nodejs = new Cards('nodejs', '../img/Nodejs.png');
-let cplus = new Cards('cplus', '../img/cplus.jpg');
+let cplus = new Cards('cplus', '../img/c++.jpg');
 
 /*********************************  Card Functions *************************************/
 
