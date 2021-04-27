@@ -32,7 +32,11 @@ CourseCom offers online courses, covers all web devevelopiong fields, provide go
 
   ![Home page](img/homepaheGIF.gif)
 
-+ In courses page the user 
++ In courses page the user can choose from multiple categories, each catogry consists of diffrenet types courses, this page allow the user to:
+  + View each course topics.
+
+    ![](img/course1.gif)
+
 + In pro
 + In abouts us 
 
