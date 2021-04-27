@@ -171,9 +171,16 @@ function hide() {
 
 // Buy:
 function BuyCourse(buttonId, linkId, object) {
-  
+  getLsBuy();
   let BuyBtn = document.getElementById(buttonId);
   let Link = document.getElementById(linkId);
+
+  if(object.buy == true){
+    BuyBtn.style.pointerEvents = 'none';
+    BuyBtn.style.opacity = '0.3';
+    Link.style.display = 'block';
+  }
+
 
   BuyBtn.addEventListener('click', function () {
 
@@ -217,7 +224,10 @@ BuyCourse('cplus-button', 'cplus-course', cplus);
 function Fav(favId, object) {
 
   let Fav = document.getElementById(favId);
-
+  getLsFav();
+  if(object.fav){
+    Fav.checked = true;
+  }
   Fav.addEventListener('click', function (e) {
     object.fav = e.target.checked; 
     saveTols();
@@ -313,6 +323,26 @@ function getLsRate() {
     
   }
 }
+
+function getLsFav() {
+  let data = JSON.parse(localStorage.getItem('courses'));
+  if (data !=null) {
+    for(let i=0;i<data.length;i++){
+      Cards.allCourses[i].fav = data[i].fav;
+    }
+    
+  }
+}
+
+function getLsBuy() {
+  let data = JSON.parse(localStorage.getItem('courses'));
+  if (data !=null) {
+    for(let i=0;i<data.length;i++){
+      Cards.allCourses[i].buy = data[i].buy;
+    }
+  }
+}
+
 
 /***************************** chart *****************************************/
 

@@ -63,3 +63,4 @@ let emptyCoursefav = document.createElement('h2');
   }   
  }
 renderCourses();
+
