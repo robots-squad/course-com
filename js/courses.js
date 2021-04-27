@@ -1,5 +1,4 @@
 /****************************** pop up logic ***********************************************/
-getLs();
 
 function Popup(content, card, close) {
 
@@ -276,8 +275,8 @@ function Rate(rateButtonId, sliderId, object, rangeId, indx) {
     Cards.allCourses[indx].count++;
     Cards.allCourses[indx].allRrte += object.rate;
     
-    saveTols();
-    
+    // saveTols();
+    saveRateTols()
     this.style.pointerEvents = 'none';
     this.style.opacity = '0.3';
     Slider.style.pointerEvents = 'none';
@@ -303,18 +302,17 @@ function saveTols() {
   localStorage.setItem('courses', JSON.stringify(Cards.allCourses));
 }
 
+// to save the rate seperate cuz if i log out i will lose them 
+function saveRateTols() {
+  localStorage.setItem('rate', JSON.stringify(Cards.allCourses));
+}
+
+
 
 ///////////////////////////// Get local storage ///////////////////////////////
 
-function getLs() {
-  let data = JSON.parse(localStorage.getItem('courses'));
-  if (data != null) {
-    Cards.allCourses = data;
-  }
-}
-
 function getLsRate() {
-  let data = JSON.parse(localStorage.getItem('courses'));
+  let data = JSON.parse(localStorage.getItem('rate'));
   if (data !=null) {
     for(let i=0;i<data.length;i++){
       Cards.allCourses[i].allRrte = data[i].allRrte;
@@ -323,6 +321,7 @@ function getLsRate() {
     
   }
 }
+
 
 function getLsFav() {
   let data = JSON.parse(localStorage.getItem('courses'));
