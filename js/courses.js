@@ -3,7 +3,7 @@ getLs();
 
 function Popup(content, card, close) {
 
-  // Get the modal
+  // Get the modal(popup window)
   let modal = document.getElementById(content);
 
   // Get the button that opens the modal
@@ -52,8 +52,6 @@ let CSScard = document.getElementById('css');
 let JScard = document.getElementById('js');
 
 let PyhtonCard = document.getElementById('python');
-
-
 let NodejsCard = document.getElementById('nodejs');
 let CCard = document.getElementById('cplus');
 
@@ -221,8 +219,7 @@ function Fav(favId, object) {
   let Fav = document.getElementById(favId);
 
   Fav.addEventListener('click', function (e) {
-    x= true;
-    object.fav = e.target.checked;
+    object.fav = e.target.checked; 
     saveTols();
   });
 }
@@ -294,7 +291,6 @@ Rate('cplus-rate-button', 'cplus-rating-slider', cplus, 'cplus-range', 8);
 
 function saveTols() {
   localStorage.setItem('courses', JSON.stringify(Cards.allCourses));
-  
 }
 
 
@@ -302,7 +298,7 @@ function saveTols() {
 
 function getLs() {
   let data = JSON.parse(localStorage.getItem('courses'));
-  if (data !=null) {
+  if (data != null) {
     Cards.allCourses = data;
   }
 }
