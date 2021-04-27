@@ -14,15 +14,9 @@ let hrefArr = ['https://youtu.be/6QAELgirvjs?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafP
 'https://youtu.be/rfscVS0vtbw',
 'https://youtu.be/CTxrpmY1At8?list=PLC3y8-rFHvwhco_O8PS1iS9xRrdVTvSIz',
 'https://youtu.be/18c3MTX0PK0?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb']
-/****************** test / local storage get ************************** */
 
-// let Cards = {
-//   allCourses: [
-//     {name: 'html',fav: true, buy: true, src: '../img/HTML.png'},
-//     {name: 'css',fav: true, buy: true, src: '../img/CSS.png'}
+/****************** local storage get ************************** */
 
-//   ]
-// }
 let data=[];
 function getLs() {
    data = JSON.parse(localStorage.getItem('courses'));
@@ -47,8 +41,8 @@ let emptyCoursefav = document.createElement('h2');
         emptyCourseBuy.style.display= 'none';
 
         href = document.createElement('a');
-        href.setAttribute('href',hrefArr[i]);
-        href.setAttribute('target','_blank')
+        href.setAttribute('href', hrefArr[i]);
+        href.setAttribute('target','_blank');
 
         image = document.createElement('img');
         href.appendChild(image);
@@ -66,7 +60,6 @@ let emptyCoursefav = document.createElement('h2');
         favRender.appendChild(image);
         image.setAttribute('src', data[i].src)
      } 
-    
   }   
  }
 renderCourses();
