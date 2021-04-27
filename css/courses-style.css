@@ -134,10 +134,11 @@ main {
     font-size: 13px;
 }
 
-#oracle-value li {
+#oracle-value li, #mongodb-value li , #sql-value li{
     padding-left: 47px;
     padding-right: 11px;
 }
+
 
 .buy-button {
     position: absolute;
@@ -320,7 +321,7 @@ main {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 70%;
+    width: 50%;
     border-radius: 20px;
 }
 
@@ -360,11 +361,12 @@ iframe {
 .popup-data ol {
     list-style: decimal;
     padding-left: 25px;
+    margin-bottom: 20px;
 }
 
 .popup-data ol li {
     padding: 7px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .popup-img {
