@@ -23,6 +23,10 @@ At these days it's hard to find a good course with good instructor in web develo
  
 CourseCom offers online courses, covers all web devevelopiong fields, provide good price, each course has a dedicated videos which will provide you with detailed and essential informations. Our website connect students to the best instructors, authored by colleges, universities and other institutions, that include opportunities for instructor-to-student interactivity, and that's back to our global community in many ways By facilitating the method of learning and providing many student needs with the lowest price and effort.
 
+# Wireframe:
+
+  ![wireframe](img/wireframe.png)
+
 # How to use Our website:
 
 + In homepage the user must login with his name then he can see a brief informations about what the site provide and a links to all pages.
