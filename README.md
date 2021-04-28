@@ -25,6 +25,7 @@ CourseCom offers online courses, covers all web devevelopiong fields, provide go
 
 # Wirframe:
 
+  ![]()
 
 # How to use Our website:
 
@@ -60,5 +61,5 @@ CourseCom offers online courses, covers all web devevelopiong fields, provide go
 + In abouts us the user will see the team story and images who made this website, and at the bottom, he/she can give a feedback about our website.
 
   ![]()
-  
+
 # Resourses:
