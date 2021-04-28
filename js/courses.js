@@ -307,8 +307,6 @@ function saveRateTols() {
   localStorage.setItem('rate', JSON.stringify(Cards.allCourses));
 }
 
-
-
 ///////////////////////////// Get local storage ///////////////////////////////
 
 function getLsRate() {
@@ -318,10 +316,8 @@ function getLsRate() {
       Cards.allCourses[i].allRrte = data[i].allRrte;
       Cards.allCourses[i].count = data[i].count;
     }
-    
   }
 }
-
 
 function getLsFav() {
   let data = JSON.parse(localStorage.getItem('courses'));
@@ -392,3 +388,21 @@ function chart(){
 }
 
 chart();
+
+
+/****************** get user name**********************/
+
+function getLS() { 
+  let data = localStorage.getItem('name');
+  if(data != null){
+    return data;
+  }
+  return false
+}
+
+if(getLS()){
+  let parent =document.getElementById('head-buttons');
+  let span = document.createElement('span');
+  parent.appendChild(span);
+  span.textContent = `Welcome ${getLS()}`;
+}

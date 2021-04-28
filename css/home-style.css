@@ -295,3 +295,87 @@ main #backend{
   cursor: pointer;
   transform: scale(1.2);
 }
+
+/********************* pop up *********************************/
+
+.popUp {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 10000000;
+  /* Sit on top */
+  padding-top: 250px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color*/
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity*/
+}
+
+.popUp-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 500px;
+  border-radius: 20px;
+}
+
+
+/* The Close Button */
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-data {
+  text-align: center;
+  position: relative;
+  width: 98%;
+}
+
+.popup-data button{
+margin-left: 10px;
+  border: 0;
+  background: #4730d5;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #8476da;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+
+.popup-data label{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.popup-data input{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 35px;
+}

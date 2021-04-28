@@ -17,11 +17,24 @@ let hrefArr = ['https://youtu.be/6QAELgirvjs?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafP
 
 /**************** log out *****************/
 
-let logOutBtn =document.getElementById('logOut');
+let logOutBtn = document.getElementById('logOut');
+let logoutPopup = document.getElementById('logout-popUp');
+let ok = document.getElementById('logout');
+let cancel = document.getElementById('logout2');
 
 logOutBtn.addEventListener('click',function(){
-   localStorage.removeItem('courses');
-   location.reload(); // to reload the page and remove the rendered images
+
+   logoutPopup.style.display='block';
+   ok.onclick= function () {
+      localStorage.removeItem('courses');
+      localStorage.removeItem('name');
+      logoutPopup.style.display='none';
+      location.reload(); // to reload the page and remove the rendered images
+   }
+   cancel.onclick=function () {
+      logoutPopup.style.display='none';
+   }
+
 })
 
 /****************** local storage get ************************** */
