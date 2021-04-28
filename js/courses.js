@@ -1,5 +1,4 @@
 /****************************** pop up logic ***********************************************/
-getLs();
 
 function Popup(content, card, close) {
 
@@ -171,9 +170,16 @@ function hide() {
 
 // Buy:
 function BuyCourse(buttonId, linkId, object) {
-  
+  getLsBuy();
   let BuyBtn = document.getElementById(buttonId);
   let Link = document.getElementById(linkId);
+
+  if(object.buy == true){
+    BuyBtn.style.pointerEvents = 'none';
+    BuyBtn.style.opacity = '0.3';
+    Link.style.display = 'block';
+  }
+
 
   BuyBtn.addEventListener('click', function () {
 
@@ -217,7 +223,10 @@ BuyCourse('cplus-button', 'cplus-course', cplus);
 function Fav(favId, object) {
 
   let Fav = document.getElementById(favId);
-
+  getLsFav();
+  if(object.fav){
+    Fav.checked = true;
+  }
   Fav.addEventListener('click', function (e) {
     object.fav = e.target.checked; 
     saveTols();
@@ -266,8 +275,8 @@ function Rate(rateButtonId, sliderId, object, rangeId, indx) {
     Cards.allCourses[indx].count++;
     Cards.allCourses[indx].allRrte += object.rate;
     
-    saveTols();
-    
+    // saveTols();
+    saveRateTols()
     this.style.pointerEvents = 'none';
     this.style.opacity = '0.3';
     Slider.style.pointerEvents = 'none';
@@ -293,26 +302,42 @@ function saveTols() {
   localStorage.setItem('courses', JSON.stringify(Cards.allCourses));
 }
 
+// to save the rate seperate cuz if i log out i will lose them 
+function saveRateTols() {
+  localStorage.setItem('rate', JSON.stringify(Cards.allCourses));
+}
 
 ///////////////////////////// Get local storage ///////////////////////////////
 
-function getLs() {
-  let data = JSON.parse(localStorage.getItem('courses'));
-  if (data != null) {
-    Cards.allCourses = data;
-  }
-}
-
 function getLsRate() {
-  let data = JSON.parse(localStorage.getItem('courses'));
+  let data = JSON.parse(localStorage.getItem('rate'));
   if (data !=null) {
     for(let i=0;i<data.length;i++){
       Cards.allCourses[i].allRrte = data[i].allRrte;
       Cards.allCourses[i].count = data[i].count;
     }
+  }
+}
+
+function getLsFav() {
+  let data = JSON.parse(localStorage.getItem('courses'));
+  if (data !=null) {
+    for(let i=0;i<data.length;i++){
+      Cards.allCourses[i].fav = data[i].fav;
+    }
     
   }
 }
+
+function getLsBuy() {
+  let data = JSON.parse(localStorage.getItem('courses'));
+  if (data !=null) {
+    for(let i=0;i<data.length;i++){
+      Cards.allCourses[i].buy = data[i].buy;
+    }
+  }
+}
+
 
 /***************************** chart *****************************************/
 
@@ -363,3 +388,21 @@ function chart(){
 }
 
 chart();
+
+
+/****************** get user name**********************/
+
+function getLS() { 
+  let data = localStorage.getItem('name');
+  if(data != null){
+    return data;
+  }
+  return false
+}
+
+if(getLS()){
+  let parent =document.getElementById('head-buttons');
+  let span = document.createElement('span');
+  parent.appendChild(span);
+  span.textContent = `Welcome ${getLS()}`;
+}

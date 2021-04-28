@@ -74,3 +74,21 @@ function gettingFeedbackDate() {
 //////////////////////////////////////////////////////////////////////////////////////////
 feedbackForm.addEventListener('submit', handleSubmit);
 gettingFeedFormLs();
+
+
+/****************** get user name**********************/
+
+function getLS() { 
+    let data = localStorage.getItem('name');
+    if(data != null){
+        return data;
+    }
+    return false
+}
+  
+  if(getLS()){
+    let parent =document.getElementById('head-buttons');
+    let span = document.createElement('span');
+    parent.appendChild(span);
+    span.textContent = `Welcome ${getLS()}`;
+}

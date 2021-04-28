@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/home-style.css">
+  
 </head>
 
 <body>
@@ -24,8 +25,8 @@
         </ul>
       </nav>
       <div id="head-buttons">
-        <button id="login">Log in</button>
-        <button id="signUp">Sign Up</button>
+        <!-- <button id="login">Log in</button> -->
+        <!-- <button id="signUp">Sign Up</button> -->
       </div>
     </div>
   </header>
@@ -112,6 +113,20 @@
       </div>
       <a href="pages/courses.html" id="more" target="_blank">See more >></a>
     </section>
+
+    <!--------------------------- log in ------------------------>
+    <div class="popUp" id="login-popUp">
+      <div class="popUp-content" id="login-content">
+          <div class="popup-data" id="login-data">
+
+            <label for="name">Please log in</label> <br>
+            <input id="name" type="text" name="name" placeholder="Enter Your name here " required minlength="2" maxlength="20" pattern="[^0-9]+" title="Please enter text only" autocomplete="off"> <br>
+            <button id="login">Log In</button>
+          
+          </div>
+      </div>
+    </div>
+
   </main>
 
   <footer>
