@@ -1,3 +1,6 @@
+if(!getLS()){
+  location.replace('../index.html') 
+}
 /****************************** pop up logic ***********************************************/
 
 function Popup(content, card, close) {

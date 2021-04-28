@@ -1,4 +1,8 @@
 'use strict';
+if(!getLS()){
+   location.replace('../index.html') 
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////
 const feedbackForm = document.getElementById('feedbackForm');
 const feedbacks = document.getElementById('feedbacks');
