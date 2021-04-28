@@ -25,19 +25,41 @@ CourseCom offers online courses, covers all web devevelopiong fields, provide go
 
 # Wirframe:
 
+  ![]()
 
 # How to use Our website:
 
-+ In homepage the user can see a brief informations about what the site provide and a links to all pages.
++ In homepage the user must login with his name then he can see a brief informations about what the site provide and a links to all pages.
 
   ![Home page](img/homepaheGIF.gif)
 
-+ In courses page the user can choose from multiple categories, each catogry consists of diffrenet types courses, this page allow the user to:
++ In courses page the user can choose from multiple categories, each category consists of different types courses, this page allow the user to:
   + View each course topics.
 
     ![](img/course1.gif)
 
-+ In pro
-+ In abouts us 
+  + Set course to favorite:
+
+    ![]()
+
+  + Buy a course (after the user buy the course, the link of the course appears):
+
+    ![]()
+
+  + Rate the course (the user use the slider to set the rate number and then press on rate button to submit the rate):
+
+    ![]()
+
+  + At the bottom of the page the user finds a chart of total ratings.
+
+    ![]()  
+
++ In profile page, the user will find his/her purchases and favourite list, and he/she can also log out from the website.
+
+  ![]()
+
++ In abouts us the user will see the team story and images who made this website, and at the bottom, he/she can give a feedback about our website.
+
+  ![]()
 
 # Resourses:

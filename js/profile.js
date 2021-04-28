@@ -1,4 +1,8 @@
 
+if(!getLS()){
+   location.replace('../index.html') 
+}
+
 let image = null;
 let href = null;
 
@@ -95,3 +99,20 @@ function renderCourses(){
 
 renderCourses();
 
+/***************** get name LS********************/
+
+function getLS() { 
+   let data = localStorage.getItem('name');
+   if(data != null){
+       return data;
+   }
+   return false
+}
+
+if(getLS()){
+   let parent =document.getElementById('head-buttons');
+   // let logOut = document.getElementById('logOut');
+   let span = document.createElement('span');
+   parent.appendChild(span);
+   span.textContent = `Welcome ${getLS()}`;
+ }
