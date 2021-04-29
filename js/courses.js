@@ -256,6 +256,7 @@ function rateShowPopup(Id, closeId) {
   let close = document.getElementById(closeId);
   close.onclick = function () {
     ratePopup.style.display = 'none';
+    location.reload();
 
   };
 
@@ -285,7 +286,6 @@ function Rate(rateButtonId, sliderId, object, rangeId, indx) {
     Slider.style.pointerEvents = 'none';
     Slider.style.opacity = '0.3';
   });
-
 }
 
 Rate('html-rate-button', 'html-rating-slider', html, 'html-range', 0);
