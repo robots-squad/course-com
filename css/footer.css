@@ -32,7 +32,7 @@ footer p{
 }
 
 #facebook{
-  background-image: url(/img/facebook.png);
+  background-image: url(../img/facebook.png);
   width: 45px;
   height: 42px;
 }
@@ -42,7 +42,7 @@ footer p{
 }
 
 #linkedin{
-  background-image: url(/img/linkedin.png);
+  background-image: url(../img/linkedin.png);
   width: 45px;
   height: 44px;
 }
@@ -52,7 +52,7 @@ footer p{
 }
 
 #insta{
-  background-image: url(/img/insta.png);
+  background-image: url(../img/insta.png);
   width: 44px;
   height: 44px;
 }
@@ -62,7 +62,7 @@ footer p{
 }
 
 #twitter{
-  background-image: url(/img/twitter.png);
+  background-image: url(../img/twitter.png);
   width: 45px;
   height: 44px;
 }
