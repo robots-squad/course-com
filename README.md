@@ -4,6 +4,8 @@
 
 This project repository for a website called **CourseCom** which offers online courses in web development field, created by a team of developers called **Robots Sqaud**.
 
+- [site link:](https://robots-squad.github.io/course-com/)
+
 # Contributers:
 
 ![](img/team.png)
